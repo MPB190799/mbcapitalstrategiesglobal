@@ -8,13 +8,16 @@
 <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
 <meta name="theme-color" content="#0f1115">
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dividend Growth Projector – MB Capital Strategies Global</title>
     <meta name="description" content="Disclaimer: All content serves exclusively informational and educational purposes and does not constitute investment advice.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.min.css">
     <style>
         .calc-container { max-width: 700px; margin: 0 auto; }
         .calc-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; margin-bottom: 2rem; }
@@ -53,6 +56,10 @@
 <meta property="og:url" content="https://mbcapitalstrategiesgloabal.com/tools/dividend-growth.html">
 <meta property="og:image" content="https://mbcapitalstrategiesgloabal.com/marco.jpg">
 <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dividend Growth Projector – MB Capital Strategies Global">
+<meta name="twitter:description" content="Disclaimer: All content serves exclusively informational and educational purposes and does not constitute investment advice.">
+<meta name="twitter:image" content="https://mbcapitalstrategiesgloabal.com/marco.jpg">
 
 <link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/tools/dividend-growth.html">
 <link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/tools/dividend-growth.html">
@@ -80,12 +87,37 @@
   "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mbcapitalstrategiesgloabal.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://mbcapitalstrategiesgloabal.com/pages/calculators.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dividend Growth Projector"
+    }
+  ]
+}
+</script>
 </head>
 <body>
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="../index.html" class="nav-logo">
-                <img src="../Logo.png" alt="MB Capital Strategies" class="nav-logo-img" style="height:40px;margin-right:10px;">
+                <img loading="lazy"  src="../Logo.png" alt="MB Capital Strategies" class="nav-logo-img" style="height:40px;margin-right:10px;">
                 <span class="logo-mb">MB</span>
                 <span class="logo-text">Capital Strategies<span class="logo-global">Global</span></span>
             </a>
@@ -109,6 +141,14 @@
                         <li><a href="../pages/energy.html">Energy &amp; Upstream</a></li>
                         <li><a href="../pages/high-yield.html">High-Yield &amp; BDCs</a></li>
                         <li><a href="../pages/supercycles.html">Commodity Supercycles</a></li>
+                    </ul>
+                </li>
+                                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Best-of 2026</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../pages/best-lng.html">Best LNG Stocks</a></li>
+                        <li><a href="../pages/best-tanker.html">Best Tanker Stocks</a></li>
+                        <li><a href="../pages/best-high-yield.html">Top High-Yield</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a href="../pages/calculators.html" class="nav-link active">Calculators</a></li>
@@ -183,7 +223,7 @@
             </div>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+    <script src="../js/main.min.js"></script>
     <script>
         function calculate() {
             var div = parseFloat(document.getElementById('currentDiv').value) || 0;
@@ -205,5 +245,6 @@
             document.getElementById('results').style.display = 'block';
         }
     </script>
+<div class="cookie-banner" id="cookieBanner"><div class="cookie-inner"><p class="cookie-text">We use cookies and Google Analytics to improve your experience. By clicking "Accept", you consent to the use of cookies for analytics and ads. <a href="/pages/privacy.html">Privacy Policy</a></p><div class="cookie-buttons"><button class="cookie-btn cookie-btn-reject" id="cookieReject">Reject</button><button class="cookie-btn cookie-btn-accept" id="cookieAccept">Accept</button></div></div></div>
 </body>
 </html>
