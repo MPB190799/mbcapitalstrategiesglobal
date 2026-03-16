@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /google*.html
+
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap.xml
