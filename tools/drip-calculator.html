@@ -233,6 +233,7 @@
                 <div class="footer-links">
                     <a href="../pages/imprint.html">Imprint</a>
                     <a href="../pages/privacy.html">Privacy Policy</a>
+                    <a href="../pages/glossary.html">Glossary</a>
                     <a href="../pages/disclaimer.html">Disclaimer</a>
                     <a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a>
                 </div>
@@ -244,10 +245,12 @@
         function fmt(n) { return '$' + n.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
         function calculate() {
             var invest = parseFloat(document.getElementById('initInvest').value) || 0;
-            var price = parseFloat(document.getElementById('sharePrice').value) || 1;
+            var price = parseFloat(document.getElementById('sharePrice').value) || 0;
             var yld = parseFloat(document.getElementById('divYield').value) || 0;
             var growth = parseFloat(document.getElementById('growthRate').value) || 0;
             var years = parseInt(document.getElementById('years').value) || 1;
+            if (price <= 0) { alert('Please enter a share price greater than $0.'); return; }
+            if (invest <= 0) { alert('Please enter an initial investment greater than $0.'); return; }
             var yldRate = yld / 100;
             var growthRate = growth / 100;
 
