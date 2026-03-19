@@ -220,6 +220,7 @@
                 <div class="footer-links">
                     <a href="../pages/imprint.html">Imprint</a>
                     <a href="../pages/privacy.html">Privacy Policy</a>
+                    <a href="../pages/glossary.html">Glossary</a>
                     <a href="../pages/disclaimer.html">Disclaimer</a>
                     <a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a>
                 </div>
@@ -233,6 +234,8 @@
             var div = parseFloat(document.getElementById('currentDiv').value) || 0;
             var growth = parseFloat(document.getElementById('growthRate').value) || 0;
             var years = parseInt(document.getElementById('years').value) || 1;
+            if (price <= 0) { alert('Please enter a purchase price greater than $0.'); return; }
+            if (div <= 0) { alert('Please enter a current dividend greater than $0.'); return; }
             var currentYield = (div / price) * 100;
             var futureDiv = div * Math.pow(1 + growth / 100, years);
             var yoc = (futureDiv / price) * 100;

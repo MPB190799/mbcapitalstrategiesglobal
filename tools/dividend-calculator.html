@@ -221,6 +221,7 @@
                 <div class="footer-links">
                     <a href="../pages/imprint.html">Imprint</a>
                     <a href="../pages/privacy.html">Privacy Policy</a>
+                    <a href="../pages/glossary.html">Glossary</a>
                     <a href="../pages/disclaimer.html">Disclaimer</a>
                     <a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a>
                 </div>
@@ -235,15 +236,16 @@
             var yieldPct = parseFloat(document.getElementById('divYield').value) || 0;
             var years = parseInt(document.getElementById('years').value) || 1;
             var contrib = parseFloat(document.getElementById('annualContrib').value) || 0;
+            if (invest <= 0) { alert('Please enter an investment amount greater than $0.'); return; }
             var rate = yieldPct / 100;
             var annualDividend = invest * rate;
             var monthlyIncome = annualDividend / 12;
             var totalDividends = 0;
             var portfolio = invest;
             for (var y = 1; y <= years; y++) {
+                portfolio += contrib;
                 var div = portfolio * rate;
                 totalDividends += div;
-                portfolio += contrib;
             }
             var finalPortfolio = invest + contrib * years;
             var finalDiv = finalPortfolio * rate;

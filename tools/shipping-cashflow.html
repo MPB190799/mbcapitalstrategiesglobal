@@ -12,7 +12,7 @@
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shipping Cashflow Calculator – MB Capital Strategies Global</title>
+    <title>Shipping Cashflow Calculator – MBCS</title>
     <meta name="description" content="Free shipping cashflow calculator: estimate daily and annual revenue for tanker, bulk carrier, and container ships based on charter rates.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,13 +50,13 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7097302643579933" crossorigin="anonymous"></script>
 
-<meta property="og:title" content="Shipping Cashflow Calculator – MB Capital Strategies Global">
+<meta property="og:title" content="Shipping Cashflow Calculator – MBCS">
 <meta property="og:description" content="Free shipping cashflow calculator: estimate daily and annual revenue for tanker, bulk carrier, and container ships based on charter rates.">
 <meta property="og:url" content="https://mbcapitalstrategiesgloabal.com/tools/shipping-cashflow.html">
 <meta property="og:image" content="https://mbcapitalstrategiesgloabal.com/marco.jpg">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Shipping Cashflow Calculator – MB Capital Strategies Global">
+<meta name="twitter:title" content="Shipping Cashflow Calculator – MBCS">
 <meta name="twitter:description" content="Free shipping cashflow calculator: estimate daily and annual revenue for tanker, bulk carrier, and container ships based on charter rates.">
 <meta name="twitter:image" content="https://mbcapitalstrategiesgloabal.com/marco.jpg">
 
@@ -220,6 +220,7 @@
                 <div class="footer-links">
                     <a href="../pages/imprint.html">Imprint</a>
                     <a href="../pages/privacy.html">Privacy Policy</a>
+                    <a href="../pages/glossary.html">Glossary</a>
                     <a href="../pages/disclaimer.html">Disclaimer</a>
                     <a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a>
                 </div>
@@ -234,6 +235,7 @@
             var opex = parseFloat(document.getElementById('opexDay').value) || 0;
             var days = parseFloat(document.getElementById('daysAtSea').value) || 0;
             var vessels = parseFloat(document.getElementById('numVessels').value) || 1;
+            if (vessels <= 0) { vessels = 1; }
             var grossRevenue = rate * days * vessels;
             var totalOpex = opex * days * vessels;
             var netCashflow = grossRevenue - totalOpex;
