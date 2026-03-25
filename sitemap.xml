@@ -572,6 +572,48 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- New Upstream Analyses -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/dno-asa-analysis-2026.html</loc>
+    <lastmod>2026-03-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/conocophillips-analysis-2026.html</loc>
+    <lastmod>2026-03-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/chevron-analysis-2026.html</loc>
+    <lastmod>2026-03-20</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/energean-analysis-2026.html</loc>
+    <lastmod>2026-03-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/petrotal-analysis-2026.html</loc>
+    <lastmod>2026-03-19</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/var-energi-analysis-2026.html</loc>
+    <lastmod>2026-03-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/harbour-energy-analysis-2026.html</loc>
+    <lastmod>2026-03-11</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/newmont-update-2026.html</loc>
+    <lastmod>2026-02-25</lastmod>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Weekly Recaps & Market Reports -->
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw12-2026.html</loc>
