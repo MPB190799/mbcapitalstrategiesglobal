@@ -571,4 +571,41 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+
+  <!-- Weekly Recaps & Market Reports -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw12-2026.html</loc>
+    <lastmod>2026-03-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw11-2026.html</loc>
+    <lastmod>2026-03-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw10-2026.html</loc>
+    <lastmod>2026-03-09</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw09-2026.html</loc>
+    <lastmod>2026-03-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/market-report-kw08-2026.html</loc>
+    <lastmod>2026-02-23</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/market-report-kw07-2026.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/market-report-kw05-2026.html</loc>
+    <lastmod>2026-02-09</lastmod>
+    <priority>0.7</priority>
+  </url>
 </urlset>
