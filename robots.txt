@@ -3,3 +3,8 @@ Allow: /
 Disallow: /google*.html
 
 Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap.xml
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-main.xml
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-blog.xml
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-tools.xml
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-video.xml
+Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-bestenlisten.xml
