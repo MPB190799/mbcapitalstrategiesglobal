@@ -159,4 +159,40 @@ document.addEventListener('DOMContentLoaded', () => {
         window['ga-disable-G-FSW7J7QYL8'] = true;
     }
 
+    // === Reading Progress Bar ===
+    const articleContent = document.querySelector('.page-content') || document.querySelector('.blog-post-content') || document.querySelector('article');
+    if (articleContent) {
+        const progressBar = document.createElement('div');
+        progressBar.className = 'reading-progress';
+        progressBar.style.width = '0%';
+        document.body.prepend(progressBar);
+
+        window.addEventListener('scroll', () => {
+            const rect = articleContent.getBoundingClientRect();
+            const totalHeight = articleContent.offsetHeight;
+            const scrolled = Math.max(0, -rect.top);
+            const progress = Math.min(100, (scrolled / (totalHeight - window.innerHeight)) * 100);
+            progressBar.style.width = progress + '%';
+        }, { passive: true });
+    }
+
+    // === Back to Top Button ===
+    const backToTop = document.createElement('button');
+    backToTop.className = 'back-to-top';
+    backToTop.innerHTML = '↑';
+    backToTop.setAttribute('aria-label', 'Back to top');
+    document.body.appendChild(backToTop);
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 400) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
 });
