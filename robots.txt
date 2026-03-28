@@ -1,6 +1,15 @@
 User-agent: *
 Allow: /
+Allow: /*.css$
+Allow: /*.js$
 Disallow: /google*.html
+Disallow: /admin/
+Disallow: /draft/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /.claude/
+Disallow: /.github/
+Disallow: /.playwright-mcp/
 
 Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap.xml
 Sitemap: https://mbcapitalstrategiesgloabal.com/sitemap-main.xml
