@@ -114,8 +114,9 @@ button {
 }
 
 .glass-card:hover {
-    border-color: rgba(212, 175, 55, 0.25);
-    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.08);
+    border-color: rgba(212, 175, 55, 0.35);
+    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.12), 0 0 0 1px rgba(212, 175, 55, 0.15);
+    transform: translateY(-4px);
 }
 
 /* === Typography === */
@@ -1964,4 +1965,314 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
+}
+
+/* ============================================
+   PREMIUM ENHANCEMENTS 2026
+   Reading Progress, Gold Accents, Animations
+   ============================================ */
+
+/* Reading Progress Bar */
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--gold-gradient);
+    z-index: 9999;
+    transition: width 0.1s linear;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+/* Gold section dividers */
+.page-content h2::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--gold-gradient);
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+/* Enhanced page-hero with gold glow */
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(ellipse at center top, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+/* Key takeaway box */
+.key-takeaway,
+.page-content .key-takeaway {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.03) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-left: 4px solid var(--gold-primary);
+    border-radius: var(--border-radius-sm);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Risk box */
+.risk-box,
+.page-content .risk-box {
+    background: linear-gradient(135deg, rgba(255, 82, 82, 0.06) 0%, rgba(255, 82, 82, 0.02) 100%);
+    border: 1px solid rgba(255, 82, 82, 0.2);
+    border-left: 4px solid #ff5252;
+    border-radius: var(--border-radius-sm);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+
+/* Info box */
+.info-box,
+.page-content .info-box {
+    background: linear-gradient(135deg, rgba(66, 165, 245, 0.06) 0%, rgba(66, 165, 245, 0.02) 100%);
+    border: 1px solid rgba(66, 165, 245, 0.2);
+    border-left: 4px solid #42a5f5;
+    border-radius: var(--border-radius-sm);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-size: 0.95rem;
+}
+
+/* Enhanced metrics grid */
+.metrics-grid,
+.page-content .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin: 28px 0;
+}
+
+.metric-card {
+    background: var(--black-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-sm);
+    padding: 20px 16px;
+    text-align: center;
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+}
+
+.metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gold-gradient);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.metric-card:hover {
+    border-color: rgba(212, 175, 55, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.metric-card:hover::before {
+    opacity: 1;
+}
+
+/* CTA Box */
+.cta-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.04) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: var(--border-radius);
+    padding: 32px;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.cta-box h3 {
+    color: var(--gold-primary);
+    margin-bottom: 12px;
+}
+
+.cta-box .btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--gold-gradient);
+    color: #000;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.cta-box .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.3);
+    opacity: 1;
+    text-decoration: none;
+}
+
+/* Scroll reveal animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Gold highlight for important numbers */
+.gold-number {
+    color: var(--gold-primary);
+    font-weight: 800;
+    font-size: 1.1em;
+}
+
+/* Premium blog article related section */
+.related-articles {
+    margin-top: 48px;
+    padding: 28px;
+    background: var(--black-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+}
+
+.related-articles h3 {
+    color: var(--gold-primary);
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.related-articles ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.related-articles li {
+    list-style: none;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.related-articles li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold-primary);
+    font-weight: 700;
+}
+
+.related-articles a {
+    color: var(--text-secondary);
+    transition: color var(--transition-fast);
+}
+
+.related-articles a:hover {
+    color: var(--gold-primary);
+    text-decoration: none;
+    opacity: 1;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+    margin-top: 40px;
+    padding: 20px 24px;
+    background: var(--black-elevated);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 44px;
+    height: 44px;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+    color: var(--gold-primary);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-base);
+    z-index: 99;
+    backdrop-filter: blur(8px);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.back-to-top:hover {
+    background: rgba(212, 175, 55, 0.25);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 16px rgba(212, 175, 55, 0.2);
+}
+
+/* Premium table styling */
+.data-table-wrapper {
+    overflow-x: auto;
+    margin: 24px 0;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--glass-border);
+}
+
+/* Smooth gold underline links in content */
+.page-content a:not(.btn):not(.glass-card) {
+    color: var(--gold-primary);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    transition: border-color var(--transition-fast);
+}
+
+.page-content a:not(.btn):not(.glass-card):hover {
+    border-bottom-color: var(--gold-primary);
+    opacity: 1;
+}
+
+/* Pulse animation for live badge */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.live-badge {
+    animation: pulse 2s infinite;
+}
+
+/* Section separators with gold gradient */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.3) 50%, transparent 100%);
+    margin: 48px 0;
+    border: none;
+}
+
+/* Premium footer enhancements */
+.footer a:hover {
+    color: var(--gold-primary);
+    opacity: 1;
 }
