@@ -2276,3 +2276,130 @@ button {
     color: var(--gold-primary);
     opacity: 1;
 }
+
+/* ============================================
+   MARCO'S TAKE — Personal Opinion Box
+   Unique component that cannot be AI-generated
+   ============================================ */
+.marcos-take {
+    position: relative;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06) 0%, rgba(212, 175, 55, 0.02) 100%);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: var(--border-radius);
+    padding: 28px 28px 28px 90px;
+    margin: 32px 0;
+    overflow: hidden;
+}
+
+.marcos-take::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--gold-gradient);
+}
+
+.marcos-take .take-avatar {
+    position: absolute;
+    left: 20px;
+    top: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid rgba(212, 175, 55, 0.4);
+    object-fit: cover;
+}
+
+.marcos-take .take-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--gold-primary);
+    margin-bottom: 8px;
+}
+
+.marcos-take .take-text {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.marcos-take .take-text strong {
+    color: var(--gold-primary);
+}
+
+/* My Position Box */
+.my-position {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 16px 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.my-position .position-badge {
+    background: var(--gold-primary);
+    color: #000;
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* Verdict Box — for comparison articles */
+.verdict-box {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 200, 83, 0.05) 100%);
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: var(--border-radius);
+    padding: 28px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.verdict-box .verdict-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold-primary);
+    margin-bottom: 8px;
+}
+
+.verdict-box .verdict-pick {
+    font-size: 1.8rem;
+    font-weight: 800;
+    background: var(--gold-text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 8px 0;
+}
+
+.verdict-box .verdict-reason {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .marcos-take {
+        padding: 20px 16px 20px 16px;
+    }
+    .marcos-take .take-avatar {
+        position: static;
+        margin-bottom: 12px;
+    }
+}
