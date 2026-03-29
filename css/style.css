@@ -2403,3 +2403,131 @@ button {
         margin-bottom: 12px;
     }
 }
+
+/* ============================================
+   PREMIUM BRAND DIFFERENTIATORS
+   Micro-details AI templates never have
+   ============================================ */
+
+/* Gold text selection */
+::selection {
+    background: rgba(212, 175, 55, 0.3);
+    color: #fff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--black-deepest); }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(212, 175, 55, 0.4), rgba(212, 175, 55, 0.2));
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(212, 175, 55, 0.6); }
+
+/* Pull Quote */
+.pull-quote {
+    position: relative;
+    margin: 36px 0;
+    padding: 24px 28px 24px 40px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--gold-primary);
+    font-style: italic;
+}
+
+.pull-quote::before {
+    content: '\201C';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgba(212, 175, 55, 0.15);
+    line-height: 1;
+    font-style: normal;
+}
+
+.pull-quote::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold-primary), transparent);
+    margin-top: 16px;
+    border-radius: 2px;
+}
+
+/* Data Highlight Strip */
+.data-strip {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.06), rgba(212, 175, 55, 0.02));
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    border-radius: var(--border-radius);
+    padding: 20px 16px;
+    margin: 28px 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.data-strip .strip-item { text-align: center; flex: 1; min-width: 100px; }
+.data-strip .strip-value { display: block; font-size: 1.4rem; font-weight: 800; color: var(--gold-primary); }
+.data-strip .strip-label { display: block; font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 4px; }
+
+/* Enhanced table headers */
+.page-content table th,
+.data-table th {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.06)) !important;
+    border-bottom: 2px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+.page-content table tr:hover,
+.data-table tbody tr:hover {
+    background: rgba(212, 175, 55, 0.04);
+}
+
+/* Animated gold line separator */
+@keyframes goldShimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+}
+
+.gold-line {
+    height: 1px;
+    margin: 40px 0;
+    border: none;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+    background-size: 200% 100%;
+    animation: goldShimmer 4s ease infinite;
+}
+
+/* Tag pills */
+.tag-pills { display: flex; gap: 8px; flex-wrap: wrap; margin: 20px 0; }
+.tag-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gold-primary);
+    background: var(--gold-subtle);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+}
+.tag-pill:hover { background: rgba(212, 175, 55, 0.15); border-color: rgba(212, 175, 55, 0.4); opacity: 1; }
+
+/* Print styles */
+@media print {
+    .navbar, .footer, .cookie-banner, .back-to-top,
+    .reading-progress, ins.adsbygoogle { display: none !important; }
+    body { background: #fff !important; color: #000 !important; }
+    h1, h2, h3 { color: #333 !important; }
+    .page-content .container { max-width: 100%; }
+    a { color: #000 !important; }
+    a::after { content: ' (' attr(href) ')'; font-size: 0.8em; color: #666; }
+}
