@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Allow: /*.css$
 Allow: /*.js$
-Disallow: /google*.html
+Allow: /google*.html
 Disallow: /admin/
 Disallow: /draft/
 Disallow: /tmp/
