@@ -563,10 +563,35 @@ button {
    ============================================ */
 .section {
     padding: var(--section-padding) 0;
+    position: relative;
+}
+
+/* Subtle gold glow accent for alternating sections */
+.section-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.25) 50%, transparent 100%);
+}
+
+.section-glow::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 200px;
+    background: radial-gradient(ellipse at center top, rgba(212, 175, 55, 0.04) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .about-section {
-    background: var(--black-deep);
+    background: linear-gradient(180deg, var(--black-deep) 0%, #080810 100%);
 }
 
 .about-grid {
@@ -681,7 +706,19 @@ button {
    SECTORS SECTION
    ============================================ */
 .sectors-section {
-    background: var(--black-primary);
+    background: linear-gradient(180deg, var(--black-primary) 0%, #07070f 50%, var(--black-primary) 100%);
+    position: relative;
+}
+
+.sectors-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .sectors-grid {
@@ -758,7 +795,19 @@ button {
    TOOLS SECTION
    ============================================ */
 .tools-section {
-    background: var(--black-deep);
+    background: linear-gradient(180deg, var(--black-deep) 0%, #06060e 50%, var(--black-deep) 100%);
+    position: relative;
+}
+
+.tools-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .tools-grid {
@@ -808,7 +857,19 @@ button {
    BEST-OF SECTION
    ============================================ */
 .bestof-section {
-    background: var(--black-primary);
+    background: linear-gradient(180deg, var(--black-primary) 0%, #080812 50%, var(--black-primary) 100%);
+    position: relative;
+}
+
+.bestof-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .bestof-grid {
@@ -862,7 +923,19 @@ button {
    NEWSLETTER SECTION
    ============================================ */
 .newsletter-section {
-    background: var(--black-deep);
+    background: linear-gradient(180deg, #06060e 0%, var(--black-deep) 50%, #08080f 100%);
+    position: relative;
+}
+
+.newsletter-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .newsletter-card {
@@ -932,7 +1005,19 @@ button {
    FAQ SECTION
    ============================================ */
 .faq-section {
-    background: var(--black-primary);
+    background: linear-gradient(180deg, var(--black-primary) 0%, #07070f 100%);
+    position: relative;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .faq-list {
@@ -997,7 +1082,19 @@ button {
    PARTNERS SECTION
    ============================================ */
 .partners-section {
-    background: var(--black-deep);
+    background: linear-gradient(180deg, var(--black-deep) 0%, #060610 50%, var(--black-deep) 100%);
+    position: relative;
+}
+
+.partners-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.2) 50%, transparent 100%);
 }
 
 .partners-grid {
