@@ -651,4 +651,18 @@
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/leverage-current-cycle-2026.html</loc><lastmod>2025-12-10</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/crypto-portfolio-2025.html</loc><lastmod>2025-10-20</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 
+  <!-- NEW: April 2026 -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/suedzucker-ethanol-oil-price-2026.html</loc>
+    <lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/suedzucker-ethanol-oil-price-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/suedzucker-ethanol-oelpreis-2026.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/riley-exploration-permian-analysis-2026.html</loc>
+    <lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/riley-exploration-permian-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/riley-exploration-permian-analyse-2026.html"/>
+  </url>
+
 </urlset>
