@@ -120,6 +120,9 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
+    // Scroll Reveal for .sr elements (bento homepage)
+    document.querySelectorAll('.sr').forEach(el => observer.observe(el));
+
     // === Newsletter Form ===
     const newsletterForm = document.getElementById('newsletterForm');
     if (newsletterForm) {

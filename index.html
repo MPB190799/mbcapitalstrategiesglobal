@@ -7,7 +7,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="theme-color" content="#0f1115">
+<meta name="theme-color" content="#050508">
 <link rel="dns-prefetch" href="https://www.googletagmanager.com">
 <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,6 +17,8 @@
     <title>MB Capital Strategies — Shipping, Mining & Dividend Research</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 <!-- Google tag (gtag.js) -->
@@ -150,12 +152,6 @@
   }
 }
 </script>
-<style>
-/* Accessibility: Keyboard navigation for dropdowns */
-@media (min-width: 769px) {
-  .nav-item.dropdown:focus-within .dropdown-menu { display: block; opacity: 1; visibility: visible; transform: translateY(0); }
-}
-</style>
 </head>
 <body>
     <!-- Navigation -->
@@ -211,712 +207,344 @@
         </div>
     </nav>
 
-    <!-- ============================================
-         HERO SECTION
-         ============================================ -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-effects">
-            <div class="hero-glow"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-left">
-                <div class="avatar-wrapper">
-                    <div class="avatar-ring"></div>
-                    <picture>
-                        <source srcset="marco.webp" type="image/webp">
-                        <img loading="lazy" src="marco.jpg" alt="Marco Bozem" class="avatar-img" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
-                    </picture>
-                    <div class="avatar-badge pulse">
-                        <span>Live</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-right">
-                <h1 class="hero-title">
-                    Hard Asset Stocks with <span class="gold-text">High Dividends</span> — Energy, Shipping &amp; Mining
-                </h1>
-                <p class="hero-subtitle">
-                    Sustainable cashflows from energy, shipping, commodities, and pipelines — analyzed independently, invested with real capital. No price fantasies, just dividends.
-                </p>
+<main id="main">
 
-                <!-- Credentials -->
-                <div class="hero-credentials">
-                    <div class="credential-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="credential-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Investor since 2018</span>
-                    </div>
-                    <div class="credential-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="credential-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>&euro;60,000+ Hard Asset Portfolio</span>
-                    </div>
-                    <div class="credential-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="credential-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Cashflow over price speculation</span>
-                    </div>
-                    <div class="credential-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="credential-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>580+ YouTube subscribers</span>
-                    </div>
-                    <div class="credential-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="credential-icon"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                        <span>Not investment advice</span>
-                    </div>
-                </div>
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-badge">Independent Research Platform</div>
 
-                <!-- Stats Strip -->
-                <div class="hero-stats-strip">
-                    <div class="stat-box">
-                        <span class="stat-number">89</span>
-                        <span class="stat-label">Pages &amp; Analyses</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">8</span>
-                        <span class="stat-label">Free Tools</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Asset Sectors</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-number">6–15%</span>
-                        <span class="stat-label">Target Dividend Yield</span>
-                    </div>
-                </div>
+  <div class="hero-avatar-wrap">
+    <picture><source srcset="marco.webp" type="image/webp"><img src="marco.jpg" alt="Marco Bozem — Dividend Investor" class="hero-img" width="168" height="168" fetchpriority="high"></picture>
+  </div>
 
-                <!-- CTA Buttons -->
-                <div class="hero-cta">
-                    <a href="pages/portfolio.html" class="btn btn-primary">View My Portfolio</a>
-                    <a href="pages/hard-asset-guide.html" class="btn btn-secondary">Hard Asset Guide</a>
-                    <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" class="btn btn-outline">YouTube</a>
-                </div>
+  <h1>High Dividends from<br>Hard Assets</h1>
 
-                <!-- Trust Indicators -->
-                <div class="trust-row">
-                    <span class="trust-item">Independent &amp; transparent</span>
-                    <span class="trust-divider">&middot;</span>
-                    <span class="trust-item">No newsletter spam</span>
-                    <span class="trust-divider">&middot;</span>
-                    <span class="trust-item">Real portfolio visible</span>
-                    <span class="trust-divider">&middot;</span>
-                    <span class="trust-item">Not investment advice</span>
-                </div>
-            </div>
-        </div>
-    </section>
+  <p class="hero-sub">
+    I'm Marco Bozem — independent investor focused on <strong>cashflow from energy, shipping, mining &amp; pipelines</strong>
+  </p>
 
-    <!-- ============================================
-         WHAT IS MB CAPITAL STRATEGIES?
-         ============================================ -->
-    <section class="section about-section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">About the Platform</span>
-                <h2 class="section-title">What is <span class="gold-text">MB Capital Strategies Global</span>?</h2>
-            </div>
+  <div class="hero-cta">
+    <a href="pages/portfolio.html" class="btn-p">View My Portfolio</a>
+    <a href="pages/hard-asset-guide.html" class="btn-s">Hard Asset Guide</a>
+    <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" class="btn-s">YouTube</a>
+  </div>
 
-            <div class="about-intro">
-                <p class="about-lead">MB Capital Strategies Global is an independent research platform focused on <strong>cashflow-based investing in hard assets</strong> — energy, shipping, mining, and pipelines. We don't predict prices and we don't give recommendations. Instead, we provide clear analysis on <a href="pages/dividend-strategy.html" style="color: var(--gold-primary);">dividend strategies</a>, <a href="pages/shipping.html" style="color: var(--gold-primary);">shipping stocks</a>, <a href="pages/mining.html" style="color: var(--gold-primary);">mining stocks</a>, honest cashflow valuations — from an investor who puts real capital at stake.</p>
-                <p>Think of it this way: A <a href="blog/frontline-vs-scorpio-tankers-2026.html" style="color: var(--gold-primary);">tanker earns money</a> when it transports oil. A <a href="pages/pipelines.html" style="color: var(--gold-primary);">pipeline collects fees</a> when gas flows through it. A <a href="blog/bhp-analysis-2026.html" style="color: var(--gold-primary);">mine generates cash</a> when it extracts copper. These are <strong>real businesses with tangible assets</strong> — and they pay some of the highest dividends in the market.</p>
+  <div class="stats">
+    <div class="stat"><span class="stat-v">89</span><span class="stat-l">Pages &amp; Analyses</span></div>
+    <div class="stat"><span class="stat-v">8</span><span class="stat-l">Free Tools</span></div>
+    <div class="stat"><span class="stat-v">5+</span><span class="stat-l">Asset Sectors</span></div>
+    <div class="stat"><span class="stat-v">6–15%</span><span class="stat-l">Target Yield</span></div>
+    <div class="stat"><span class="stat-v">580+</span><span class="stat-l">YouTube</span></div>
+  </div>
 
-                <h3 style="color: var(--gold-primary); font-size: 1.15rem; margin: 28px 0 12px;">The Hard Asset Strategy in a Nutshell</h3>
-                <p>Hard assets generate cashflow from real economic activity. <a href="pages/shipping.html" style="color: var(--gold-primary);">Shipping companies</a> earn freight rates, <a href="pages/pipelines.html" style="color: var(--gold-primary);">pipelines collect tariffs</a>, and <a href="pages/mining.html" style="color: var(--gold-primary);">mines produce metals</a> — regardless of what the broader stock market does. This fundamental cashflow logic makes hard asset companies some of the most reliable dividend payers, with yields typically ranging from 6% to 15%.</p>
-                <p><strong>Hard asset stocks</strong> are accessible to global investors through major exchanges: tanker stocks like <a href="blog/frontline-vs-scorpio-tankers-2026.html" style="color: var(--gold-primary);">Frontline or Scorpio Tankers</a> trade on NYSE, LNG carriers like <a href="pages/best-lng.html" style="color: var(--gold-primary);">FLEX LNG</a> via international brokers, and midstream MLPs like <a href="blog/enbridge-analysis-2026.html" style="color: var(--gold-primary);">Enbridge</a> or <a href="blog/oneok-analysis-2026.html" style="color: var(--gold-primary);">ONEOK</a> on US markets. Our <a href="pages/toolbox.html" style="color: var(--gold-primary);">Toolbox</a> and <a href="pages/hard-asset-guide.html" style="color: var(--gold-primary);">Hard Asset Guide</a> show you exactly how to get started.</p>
+  <div class="trust">
+    <span>Independent &amp; ad-supported</span>
+    <span>Real portfolio visible</span>
+    <span>Investor since 2018</span>
+    <span>Not investment advice</span>
+  </div>
+</section>
 
-                <h3 style="color: var(--gold-primary); font-size: 1.15rem; margin: 28px 0 12px;">What You Get on This Platform</h3>
-                <ul style="color: var(--text-secondary); line-height: 2; padding-left: 20px;">
-                    <li><strong style="color: var(--text-primary);">Stock Analyses</strong> — in-depth research on <a href="pages/shipping.html" style="color: var(--gold-primary);">shipping</a>, <a href="pages/mining.html" style="color: var(--gold-primary);">mining</a>, <a href="pages/pipelines.html" style="color: var(--gold-primary);">midstream</a>, and <a href="pages/energy.html" style="color: var(--gold-primary);">energy</a> dividend stocks with focus on free cashflow, debt levels, and dividend stability</li>
-                    <li><strong style="color: var(--text-primary);">8 Free Calculators</strong> — from the <a href="tools/dividend-calculator.html" style="color: var(--gold-primary);">Dividend Calculator</a> to the <a href="tools/snowball-yoc-pro.html" style="color: var(--gold-primary);">Snowball YOC PRO</a> and the unique <a href="tools/shipping-cashflow.html" style="color: var(--gold-primary);">Shipping Cashflow Calculator</a></li>
-                    <li><strong style="color: var(--text-primary);">Sector Hubs</strong> — complete analysis hubs for <a href="pages/shipping.html" style="color: var(--gold-primary);">shipping stocks</a> (incl. <a href="pages/best-tanker.html" style="color: var(--gold-primary);">tanker cashflow rankings</a>), <a href="pages/pipelines.html" style="color: var(--gold-primary);">midstream</a>, and <a href="pages/mining.html" style="color: var(--gold-primary);">mining</a></li>
-                    <li><strong style="color: var(--text-primary);">Live Portfolio Transparency</strong> — the <a href="pages/portfolio.html" style="color: var(--gold-primary);">portfolio is visible live</a> via Parqet, including current allocation, cashflow, and dividend yield</li>
-                    <li><strong style="color: var(--text-primary);">Podcast &amp; YouTube</strong> — deep-dive series on shipping, mining, and dividend strategies on the <a href="pages/podcast.html" style="color: var(--gold-primary);">Hard Asset Income Podcast</a></li>
-                </ul>
-                <p>Whether you're just starting with dividend investing or already managing a hard asset portfolio — you'll find content with real value here.</p>
-            </div>
+<div class="sec-line"></div>
 
-            <div class="about-grid">
-                <div class="about-card glass-card">
-                    <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                    </div>
-                    <h3>No Price Forecasts</h3>
-                    <p>We don't predict where stocks are heading. We analyze cashflows, dividend sustainability, and real business fundamentals.</p>
-                </div>
-                <div class="about-card glass-card">
-                    <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-                    </div>
-                    <h3>No Recommendations</h3>
-                    <p>Every analysis is educational. We share our research and what we buy — but we never tell you what to do with your money.</p>
-                </div>
-                <div class="about-card glass-card">
-                    <div class="about-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-                    </div>
-                    <h3>Real Capital at Stake</h3>
-                    <p>This isn't theory. Real money, real positions, real dividends — portfolio visible via Parqet with monthly YouTube updates.</p>
-                </div>
-            </div>
+<!-- ═══ INTRO ═══ -->
+<section class="sec sr">
+  <div class="intro">
+    <h2>What is MB Capital Strategies Global?</h2>
+    <p>MB Capital Strategies Global is an independent research platform for investors who focus on <strong>cashflow over price speculation</strong>. At the center are hard assets: energy, shipping, mining and midstream pipelines — sectors that convert real economic activity into reliable dividends. Dividend yields of 6–15% are not the exception here, but the result of concrete cashflow logic.</p>
+    <p>You won't find price forecasts or recommendations here. What you will find: clear analysis on <a href="pages/dividend-strategy.html">dividend strategies</a>, in-depth research on <a href="pages/shipping.html">shipping &amp; tanker stocks</a> and <a href="pages/mining.html">mining stocks</a>, honest cashflow valuations — and an investor who puts real capital at stake in these strategies.</p>
 
-            <!-- What You Get -->
-            <div class="about-features glass-card">
-                <h3>What You Get on This Platform</h3>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <span class="feature-icon">&#128200;</span>
-                        <div>
-                            <strong>Stock Analyses</strong>
-                            <p>In-depth analysis of shipping, mining, midstream, and energy dividend stocks</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">&#128736;</span>
-                        <div>
-                            <strong>8 Free Calculators</strong>
-                            <p>Shipping cashflow, dividend, yield-on-cost, DRIP, financial freedom &amp; more</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">&#127758;</span>
-                        <div>
-                            <strong>Sector Hubs</strong>
-                            <p>Complete analysis hubs for each hard asset sector with key metrics and glossaries</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">&#128064;</span>
-                        <div>
-                            <strong>Live Portfolio</strong>
-                            <p>Full transparency via Parqet — see every position, every dividend, every trade</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">&#127897;</span>
-                        <div>
-                            <strong>Podcast &amp; YouTube</strong>
-                            <p>Deep-dive podcast series on shipping, mining, pipelines, and market cycles</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">&#128176;</span>
-                        <div>
-                            <strong>80/20 Strategy</strong>
-                            <p>80% stable dividend payers, 20% cash for tactical buys during weakness</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <h3>The Hard Asset Strategy in a Nutshell</h3>
+    <p>Hard assets generate cashflow from real economic activity. A <a href="pages/shipping.html">tanker earns money</a> when it transports oil. A <a href="pages/pipelines.html">pipeline collects fees</a> when gas flows through it. A <a href="pages/mining.html">mine produces revenue</a> when copper is extracted.</p>
+    <p><strong>Hard asset stocks</strong> are accessible to global investors through major exchanges: tanker stocks like <a href="blog/frontline-vs-scorpio-tankers-2026.html">Frontline or Scorpio Tankers</a> trade on NYSE, LNG carriers like <a href="pages/best-lng.html">FLEX LNG</a> via international brokers, and midstream MLPs like <a href="blog/enbridge-analysis-2026.html">Enbridge</a> or <a href="blog/oneok-analysis-2026.html">ONEOK</a> on US markets. Our <a href="pages/toolbox.html">Toolbox</a> and <a href="pages/hard-asset-guide.html">Hard Asset Guide</a> show you exactly how to get started.</p>
+    <p>My strategy: <strong>80% of the portfolio</strong> in stable, cashflow-strong dividend payers. The remaining <strong>20%</strong> stays as liquidity for counter-cyclical buys during weak phases.</p>
 
-            <!-- Philosophy -->
-            <div class="about-philosophy glass-card">
-                <div class="philosophy-badge">Investment Philosophy</div>
-                <h3>The 80/20 Strategy</h3>
-                <p>80% of the portfolio in <strong>stable, cashflow-strong dividend payers</strong> from pipelines, mining royalties, shipping, and infrastructure. 20% in <strong>ultrashort bonds and cash</strong> for tactical opportunities — ready to deploy when the market offers bargains. Cashflow is king: consistent, compounding, and real.</p>
-                <div class="philosophy-stats">
-                    <div class="philosophy-stat">
-                        <span class="philosophy-number">80%</span>
-                        <span class="philosophy-label">Stable Dividend Payers</span>
-                    </div>
-                    <div class="philosophy-stat">
-                        <span class="philosophy-number">20%</span>
-                        <span class="philosophy-label">Tactical Opportunities</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <h3>What You Get on This Platform</h3>
+    <ul>
+      <li><strong>Stock Analyses</strong> — in-depth research on <a href="pages/shipping.html">shipping</a>, <a href="pages/mining.html">mining</a>, <a href="pages/pipelines.html">midstream</a>, and <a href="pages/energy.html">energy</a> dividend stocks with focus on free cashflow, debt levels, and dividend stability</li>
+      <li><strong>8 Free Calculators</strong> — from the <a href="tools/dividend-calculator.html">Dividend Calculator</a> to the <a href="tools/snowball-yoc-pro.html">Snowball YOC PRO</a> and the unique <a href="tools/shipping-cashflow.html">Shipping Cashflow Calculator</a></li>
+      <li><strong>Sector Hubs</strong> — complete analysis hubs for <a href="pages/shipping.html">shipping stocks</a>, <a href="pages/pipelines.html">midstream</a>, and <a href="pages/mining.html">mining</a></li>
+      <li><strong>Live Portfolio Transparency</strong> — the <a href="pages/portfolio.html">portfolio is visible live</a> via Parqet with current allocation, cashflow, and dividend yield</li>
+      <li><strong>Podcast &amp; YouTube</strong> — deep-dive series on shipping, mining, and dividend strategies on the <a href="pages/podcast.html">Hard Asset Income Podcast</a></li>
+    </ul>
+    <p>Whether you're just starting with dividend investing or already managing a hard asset portfolio — you'll find content with real value here.</p>
+  </div>
+</section>
 
-    <!-- ============================================
-         SECTOR CARDS (Expanded — 11 cards like original)
-         ============================================ -->
-    <section class="section sectors-section" id="sectors">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Focus Areas</span>
-                <h2 class="section-title">Our <span class="gold-text">Sectors</span></h2>
-                <p class="section-desc">Deep-dive analyses into the sectors that generate real, tangible cashflows from hard assets.</p>
-            </div>
-            <div class="sectors-grid-expanded">
-                <a href="pages/dividend-strategy.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128176;</div>
-                    <h3>Dividend Strategy</h3>
-                    <p>Cashflow, high yield, hard assets — our approach to building sustainable income through dividends that actually get paid.</p>
-                    <span class="sector-link">Learn More &rarr;</span>
-                </a>
-                <a href="pages/mining.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#9935;</div>
-                    <h3>Mining Stocks &amp; Commodity Cycles</h3>
-                    <p>Cyclical cashflow machines — gold, copper, coal producers analyzed through AISC, capex discipline, and cycle timing.</p>
-                    <span class="sector-link">Explore Mining &rarr;</span>
-                </a>
-                <a href="pages/shipping.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128674;</div>
-                    <h3>Shipping Stocks</h3>
-                    <p>Tanker, bulk, LNG carriers — dayrates, TCE, break-even analysis. Ships sail, cargo flows, dividends are paid.</p>
-                    <span class="sector-link">Explore Shipping &rarr;</span>
-                </a>
-                <a href="pages/pipelines.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128295;</div>
-                    <h3>Midstream &amp; Pipelines</h3>
-                    <p>MLPs, take-or-pay contracts, inflation-indexed tariffs — the most predictable cashflows in energy infrastructure.</p>
-                    <span class="sector-link">Explore Pipelines &rarr;</span>
-                </a>
-                <a href="pages/high-yield.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128184;</div>
-                    <h3>High-Yield Stocks</h3>
-                    <p>Target 7–12% yield — BDCs, tanker stocks, MLPs, infrastructure REITs. Income-first investing for serious dividend hunters.</p>
-                    <span class="sector-link">Explore High-Yield &rarr;</span>
-                </a>
-                <a href="pages/supercycles.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#127793;</div>
-                    <h3>Commodity Supercycles</h3>
-                    <p>Copper, uranium, zinc, nickel — macro-cycle positioning for the energy transition and decades of underinvestment.</p>
-                    <span class="sector-link">Explore Supercycles &rarr;</span>
-                </a>
-                <a href="pages/supercycles.html#copper" class="sector-card glass-card">
-                    <div class="sector-emoji">&#129513;</div>
-                    <h3>Copper Supercycle</h3>
-                    <p>Energy transition, grid infrastructure, EV demand — why copper could be the defining commodity of the next decade.</p>
-                    <span class="sector-link">Deep Dive &rarr;</span>
-                </a>
-                <a href="pages/supercycles.html#uranium" class="sector-card glass-card">
-                    <div class="sector-emoji">&#9762;&#65039;</div>
-                    <h3>Uranium Supercycle</h3>
-                    <p>Nuclear renaissance, SMRs, supply deficit — structural forces driving the next leg of the uranium bull market.</p>
-                    <span class="sector-link">Deep Dive &rarr;</span>
-                </a>
-                <a href="pages/portfolio.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128202;</div>
-                    <h3>Portfolio Strategy</h3>
-                    <p>80/20 mix fully documented — live Parqet tracking, monthly YouTube updates, complete position transparency.</p>
-                    <span class="sector-link">View Portfolio &rarr;</span>
-                </a>
-                <a href="pages/toolbox.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128736;</div>
-                    <h3>Toolbox</h3>
-                    <p>The brokers, screeners, and tools we personally use — Scalable Capital, InvestingPro, Parqet, and more.</p>
-                    <span class="sector-link">View Toolbox &rarr;</span>
-                </a>
-                <a href="pages/blog.html" class="sector-card glass-card">
-                    <div class="sector-emoji">&#128221;</div>
-                    <h3>Blog &amp; Analyses</h3>
-                    <p>75+ in-depth stock analyses — upstream, mining, shipping, pipelines, BDCs. New research published regularly.</p>
-                    <span class="sector-link">Read Blog &rarr;</span>
-                </a>
-            </div>
-        </div>
-    </section>
+<ins class="adsbygoogle" style="display:block;text-align:center;margin:24px auto" data-ad-client="ca-pub-7097302643579933" data-ad-slot="3778191657" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
-    <!-- ============================================================
-         NEWSLETTER CTA
-         ============================================================ -->
-    <section class="section reveal" id="newsletter">
-      <div style="max-width:580px;margin:0 auto;text-align:center;padding:20px 0 10px;">
-        <span style="display:inline-block;background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.3);border-radius:999px;padding:5px 16px;font-size:0.76rem;font-weight:700;color:#d4af37;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;">
-          MB Capital Insider
-        </span>
-        <h2 style="color:#f5f6fa;font-size:1.55rem;margin:0 0 12px;line-height:1.3;">
-          Every Sunday: Weekly Review &amp; Market Outlook
-        </h2>
-        <p style="color:#9aa6c0;line-height:1.7;margin:0 0 28px;font-size:0.95rem;">
-          Weekly recap of the most important developments in shipping, mining, energy &amp; pipelines — plus my personal market outlook straight from the portfolio.
-        </p>
+<div class="sec-line"></div>
 
-        <form method="POST" action="https://cf86455c.sibforms.com/serve/MUIFAIb7f1lflE6kIGEoW0CiaYhm0zlsprpmM3MqGWH_2nB3baUSs94gRBMRJtSDWa2f5R7FWeWWGtjW73wi79soTyWbW6shpsnUEspoIRZhpOpvJloSA_tAm6_i29D4OWhZZxZMaJo3iTmz9GS64hxZDTGXUWp9QF3qgNdjCQDL3Y83JYdFsiB1gEUjMOA8bRE6IIa9I8vwGCpYAw==" data-type="subscription" style="margin-bottom:16px;">
-          <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:12px;">
-            <input
-              type="email"
-              name="EMAIL"
-              placeholder="your@email.com"
-              required
-              style="flex:1;min-width:220px;max-width:320px;padding:13px 18px;border-radius:10px;border:1px solid rgba(212,175,55,0.35);background:rgba(255,255,255,0.05);color:#f5f6fa;font-size:0.95rem;font-family:inherit;outline:none;transition:border-color 0.2s;"
-              onfocus="this.style.borderColor='rgba(212,175,55,0.7)'"
-              onblur="this.style.borderColor='rgba(212,175,55,0.35)'"
-            >
-            <button
-              type="submit"
-              style="padding:13px 26px;background:#d4af37;color:#000;font-weight:700;border:none;border-radius:10px;font-size:0.95rem;cursor:pointer;font-family:inherit;white-space:nowrap;"
-              onmouseover="this.style.background='#e8c84a'"
-              onmouseout="this.style.background='#d4af37'"
-            >
-              Subscribe &rarr;
-            </button>
-          </div>
-          <label style="display:flex;align-items:flex-start;gap:8px;max-width:440px;margin:0 auto;text-align:left;cursor:pointer;">
-            <input type="checkbox" name="OPT_IN" value="1" required style="margin-top:3px;accent-color:#d4af37;flex-shrink:0;">
-            <span style="color:#5a6480;font-size:0.74rem;">
-              I accept the <a href="/pages/privacy.html" style="color:#d4af37;text-decoration:none;">Privacy Policy</a>
-              and want to receive the MB Capital Insider newsletter. Unsubscribe anytime.
-            </span>
-          </label>
-          <input type="hidden" name="email_address_check" value="">
-          <input type="hidden" name="locale" value="en">
-        </form>
-
-        <p style="color:#9aa6c0;font-size:0.78rem;margin:8px 0 0;">
-          Or: <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" style="color:#d4af37;">Subscribe on YouTube</a> for monthly portfolio videos
-        </p>
+<!-- ═══ NEWSLETTER ═══ -->
+<div class="nl sr" id="newsletter">
+  <div class="nl-box">
+    <div class="sec-tag">MB Capital Insider</div>
+    <h2>Every Sunday: Weekly Review &amp; Market Outlook</h2>
+    <p>Weekly recap of the most important developments in shipping, mining, energy &amp; pipelines — plus my personal market outlook straight from the portfolio.</p>
+    <form method="POST" action="https://cf86455c.sibforms.com/serve/MUIFAIb7f1lflE6kIGEoW0CiaYhm0zlsprpmM3MqGWH_2nB3baUSs94gRBMRJtSDWa2f5R7FWeWWGtjW73wi79soTyWbW6shpsnUEspoIRZhpOpvJloSA_tAm6_i29D4OWhZZxZMaJo3iTmz9GS64hxZDTGXUWp9QF3qgNdjCQDL3Y83JYdFsiB1gEUjMOA8bRE6IIa9I8vwGCpYAw==" data-type="subscription">
+      <div class="nl-form">
+        <input type="email" name="EMAIL" placeholder="your@email.com" required>
+        <button type="submit">Subscribe &rarr;</button>
       </div>
-    </section>
+      <label style="display:flex;align-items:flex-start;gap:8px;max-width:440px;margin:0 auto;text-align:left;cursor:pointer;">
+        <input type="checkbox" name="OPT_IN" value="1" required style="margin-top:3px;accent-color:var(--gold-primary);flex-shrink:0;">
+        <span style="color:var(--text-muted);font-size:.72rem;">I accept the <a href="pages/privacy.html" style="color:var(--gold-primary);">Privacy Policy</a> and want to receive the MB Capital Insider newsletter. Unsubscribe anytime.</span>
+      </label>
+      <input type="hidden" name="email_address_check" value="">
+      <input type="hidden" name="locale" value="en">
+    </form>
+    <p style="color:var(--text-muted);font-size:.76rem;margin-top:14px;">Or: <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" style="color:var(--gold-primary);">Subscribe on YouTube</a> for monthly portfolio videos</p>
+  </div>
+</div>
 
-    <!-- ============================================
-         PARTNERS & TOOLS
-         ============================================ -->
-    <section class="section partners-section" id="partners">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Recommended Tools</span>
-                <h2 class="section-title">Partner &amp; <span class="gold-text">Tools</span></h2>
-                <p class="section-desc">Every tool listed here is one we personally use in our investing workflow. No paid placements — only tools we trust.</p>
-            </div>
-            <div class="partners-grid">
-                <a href="https://de.scalable.capital/trading-aff?utm_medium=affiliate&utm_source=qualityclick&utm_campaign=broker&utm_term=921&c_id=QC5f486e726d74q6a7X47c52744b5f4c6a76647f63757e5a7f43" class="partner-card glass-card" target="_blank" rel="sponsored noopener">
-                    <h4>Scalable Capital</h4>
-                    <p>Our primary broker for dividend investing — affordable flat-rate fees, fractional shares, and automated savings plans for long-term portfolios.</p>
-                </a>
-                <a href="https://www.investing-referral.com/mbcapital3/" class="partner-card glass-card" target="_blank" rel="sponsored noopener">
-                    <h4>InvestingPro</h4>
-                    <p>The foundation for our data-based analyses — fair value models, cashflow screening, professional research, and fundamental data for every stock we cover.</p>
-                </a>
-                <a href="https://parqet.com/?ref=a99fc877f10014bd0f127146a803dac354f018d8" class="partner-card glass-card" target="_blank" rel="sponsored noopener">
-                    <h4>Parqet</h4>
-                    <p>Dividend calendar, portfolio tracking, and cashflow visualization — the best tool for income investors who want to see their money working.</p>
-                </a>
-                <a href="https://refnocode.trade.re/79z763g7" class="partner-card glass-card" target="_blank" rel="sponsored noopener">
-                    <h4>Trade Republic</h4>
-                    <p>Our second broker — commission-free trading, savings plans, and 4% interest on cash. Perfect complement to Scalable Capital.</p>
-                </a>
-                <a href="https://debituminvestments.pxf.io/vDzqgy" class="partner-card glass-card" target="_blank" rel="sponsored noopener">
-                    <h4>Debitum Investments</h4>
-                    <p>P2P lending platform delivering 10–12% returns — ranked #2 of 30 in the community. An alternative income stream we use alongside equities.</p>
-                </a>
-            </div>
-            <p class="affiliate-note">Some links are affiliate links. No additional costs for you. Using them supports the platform. Not investment advice.</p>
-        </div>
-    </section>
+<div class="sec-line"></div>
 
-    <!-- ============================================
-         FREE CALCULATORS
-         ============================================ -->
-    <section class="section tools-section" id="tools">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Free Tools</span>
-                <h2 class="section-title">Free Investor <span class="gold-text">Calculators</span></h2>
-                <p class="section-desc">Eight free calculators — no registration, no paywall. Built because we use them ourselves.</p>
-            </div>
-            <div class="tools-grid">
-                <a href="tools/shipping-cashflow.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#128674;</div>
-                    <h4>Shipping Cashflow</h4>
-                    <p>Calculate TCE, OPEX, free cash flow, and dividend potential for any vessel type.</p>
-                </a>
-                <a href="tools/dividend-calculator.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#128176;</div>
-                    <h4>Dividend Calculator</h4>
-                    <p>Project annual, monthly, and quarterly dividend income over time.</p>
-                </a>
-                <a href="tools/yield-on-cost.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#128200;</div>
-                    <h4>Yield-on-Cost</h4>
-                    <p>Track how your effective yield grows on your original cost basis over time.</p>
-                </a>
-                <a href="tools/dividend-growth.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#128640;</div>
-                    <h4>Dividend Growth</h4>
-                    <p>Simulate annual dividend growth and see the compounding effect on your income.</p>
-                </a>
-                <a href="tools/drip-calculator.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#128260;</div>
-                    <h4>DRIP Reinvestment</h4>
-                    <p>See the true power of compound interest through automatic dividend reinvestment.</p>
-                </a>
-                <a href="tools/financial-freedom.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#127937;</div>
-                    <h4>Financial Freedom</h4>
-                    <p>Calculate when your dividend income covers your monthly living expenses.</p>
-                </a>
-                <a href="tools/dividend-snowball.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#10052;&#65039;</div>
-                    <h4>Dividend Snowball PRO</h4>
-                    <p>Long-term dividend growth projection with contributions and reinvestment modeling.</p>
-                </a>
-                <a href="tools/snowball-yoc-pro.html" class="tool-card glass-card">
-                    <div class="tool-emoji">&#10052;&#65039;</div>
-                    <h4>Snowball YOC PRO</h4>
-                    <p>Combined yield-on-cost + growth + reinvestment — the ultimate dividend projection tool.</p>
-                </a>
-            </div>
-            <div style="text-align: center; margin-top: 32px;">
-                <a href="pages/calculators.html" class="btn btn-secondary">View All Calculators &rarr;</a>
-            </div>
-        </div>
-    </section>
+<!-- ═══ SECTORS — BENTO ═══ -->
+<section class="sec sr">
+  <div class="sec-tag">Our Focus Areas</div>
+  <h2 class="sec-h">Hard Assets &amp; <em>Cashflow</em></h2>
+  <p class="sec-sub">The key sectors for cashflow investors — clearly structured &amp; cyclically positioned.</p>
 
-    <!-- ============================================
-         FAQ
-         ============================================ -->
-    <section class="section faq-section" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Questions &amp; Answers</span>
-                <h2 class="section-title">Frequently Asked <span class="gold-text">Questions</span></h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item glass-card">
-                    <button class="faq-question">
-                        <span>What are hard assets and why do they pay high dividends?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Hard assets are physical, tangible assets with intrinsic value — ships, pipelines, mines, oil wells, and infrastructure. These businesses generate real cashflows from day one: a tanker earns freight rates, a pipeline collects tariffs, a mine produces metals. Because their value comes from physical operations (not growth hopes), they distribute more cash to shareholders — typically 6–15% dividend yields. Unlike tech stocks valued on future potential, hard asset companies are valued on what they produce today.</p>
-                    </div>
-                </div>
-                <div class="faq-item glass-card">
-                    <button class="faq-question">
-                        <span>What is your investment philosophy?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We follow an 80/20 approach: 80% of the portfolio is invested in stable, high-dividend hard asset stocks — pipelines, mining royalties, shipping companies, and infrastructure. The remaining 20% is held in ultrashort bonds and cash, ready for tactical deployment when markets offer opportunities. Our focus is always on cashflow, not price speculation. We buy assets that generate income regardless of what the broader market does, and we reinvest dividends to compound our returns over time.</p>
-                    </div>
-                </div>
-                <div class="faq-item glass-card">
-                    <button class="faq-question">
-                        <span>How can I see your portfolio?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Our full portfolio is tracked live via Parqet — both our Scalable Capital and Trade Republic positions are visible with complete transparency. You can see every holding, every dividend payment, and every allocation change. Additionally, we publish monthly video updates on YouTube where we discuss what we bought, sold, and why. Visit our <a href="pages/portfolio.html" style="color: var(--gold-primary);">Portfolio page</a> for the live tracker.</p>
-                    </div>
-                </div>
-                <div class="faq-item glass-card">
-                    <button class="faq-question">
-                        <span>Which free tools are available?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We offer 8 free calculators with no registration required: Shipping Cashflow Calculator (TCE, OPEX, FCF), Dividend Calculator, Yield-on-Cost Tool, Dividend Growth Simulator, DRIP Reinvestment Calculator, Financial Freedom Calculator, Dividend Snowball PRO, and Snowball YOC PRO. All tools are designed for dividend and hard asset investors — built because we use them ourselves. <a href="pages/calculators.html" style="color: var(--gold-primary);">Try them here</a>.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="bento">
+    <div class="b-card featured span-2 sr sr-d1">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+      <h3>Dividend Strategy</h3>
+      <p>Our complete approach to cashflow, high yield &amp; hard assets — free cashflow, cycles &amp; reinvestment. The 80/20 strategy for long-term wealth building.</p>
+      <a href="pages/dividend-strategy.html" class="b-link">Explore Strategy <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d2">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h3>Mining Stocks</h3>
+      <p>AISC, free cashflow, capex discipline &amp; cycle timing.</p>
+      <a href="pages/mining.html" class="b-link">Mining Hub <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d3">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg></div>
+      <h3>Shipping Stocks</h3>
+      <p>Dayrates, TCE, break-even &amp; cashflow for tanker, bulk &amp; LNG.</p>
+      <a href="pages/shipping.html" class="b-link">Shipping Hub <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d4">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+      <h3>Midstream &amp; Pipelines</h3>
+      <p>MLPs, take-or-pay &amp; stable cashflows as the dividend backbone.</p>
+      <a href="pages/pipelines.html" class="b-link">Pipelines <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d5">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      <h3>High-Yield Stocks</h3>
+      <p>7–12% dividend yield from BDCs, tankers, MLPs &amp; cashflow sectors.</p>
+      <a href="pages/high-yield.html" class="b-link">High-Yield <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card span-2 sr sr-d6">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+      <h3>Commodity Supercycles</h3>
+      <p>Copper, uranium, zinc &amp; nickel — macro cycles, supply shortages &amp; cashflow logic. Energy transition meets underinvestment.</p>
+      <a href="pages/supercycles.html" class="b-link">Supercycles Hub <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
 
-    <!-- ============================================
-         BEST-OF LISTS 2026
-         ============================================ -->
-    <section class="section bestof-section" id="bestof">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Popular Rankings</span>
-                <h2 class="section-title">Best-of <span class="gold-text">Lists 2026</span></h2>
-            </div>
-            <div class="bestof-grid">
-                <a href="pages/best-lng.html" class="bestof-card glass-card">
-                    <div class="bestof-icon">&#128293;</div>
-                    <h3>Best LNG Stocks 2026</h3>
-                    <p>Top liquefied natural gas carriers and infrastructure plays ranked by cashflow metrics and dividend sustainability.</p>
-                    <span class="bestof-link">View Ranking &rarr;</span>
-                </a>
-                <a href="pages/best-tanker.html" class="bestof-card glass-card">
-                    <div class="bestof-icon">&#128674;</div>
-                    <h3>Best Tanker Stocks 2026</h3>
-                    <p>Crude and product tanker companies ranked by break-even rates, fleet age, charter coverage, and dividends.</p>
-                    <span class="bestof-link">View Ranking &rarr;</span>
-                </a>
-                <a href="pages/best-high-yield.html" class="bestof-card glass-card">
-                    <div class="bestof-icon">&#128184;</div>
-                    <h3>Top 5 High-Yield 2026</h3>
-                    <p>The highest-yielding dividend stocks across BDCs, REITs, MLPs, and infrastructure for income-focused investors.</p>
-                    <span class="bestof-link">View Ranking &rarr;</span>
-                </a>
-            </div>
-            <div style="text-align: center; margin-top: 32px;">
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">New rankings and updates published regularly on <a href="pages/blog.html" style="color: var(--gold-primary);">our blog</a>.</p>
-            </div>
-        </div>
-    </section>
+<div class="sec-line"></div>
 
-    <!-- ============================================
-         PODCAST & YOUTUBE
-         ============================================ -->
-    <section class="section podcast-section" id="podcast-preview">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Listen &amp; Watch</span>
-                <h2 class="section-title">Podcast &amp; <span class="gold-text">YouTube</span></h2>
-                <p class="section-desc">Deep-dive episodes on hard asset investing — available on Spotify, Apple Podcasts, and YouTube.</p>
-            </div>
-            <div class="about-philosophy glass-card" style="margin-bottom: 24px;">
-                <div class="philosophy-badge">Hard Asset Income Podcast</div>
-                <h3>Weekly Dividend Investing Insights</h3>
-                <p>Each episode covers a specific sector or strategy in depth — from <a href="pages/shipping.html" style="color: var(--gold-primary);">shipping cashflows</a> and <a href="pages/mining.html" style="color: var(--gold-primary);">mining cycles</a> to <a href="pages/pipelines.html" style="color: var(--gold-primary);">pipeline tariffs</a> and <a href="pages/high-yield.html" style="color: var(--gold-primary);">BDC analysis</a>. Real portfolio insights, no fluff.</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 20px;">
-                    <a href="pages/podcast.html" class="btn btn-primary">All Episodes</a>
-                    <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" class="btn btn-secondary">YouTube Channel</a>
-                    <a href="https://open.spotify.com/show/mbcapitalstrategies" target="_blank" rel="noopener" class="btn btn-outline" style="border: 1px solid var(--gold-primary); color: var(--gold-primary);">Spotify</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- ═══ QUICK LINKS ═══ -->
+<section class="sec sr">
+  <div class="bento" style="grid-template-columns:repeat(3,1fr)">
+    <div class="b-card sr sr-d1">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+      <h3>Portfolio Strategy</h3>
+      <p>80/20 mix, cycles, timing &amp; cashflow — fully transparent and visible live.</p>
+      <a href="pages/portfolio.html" class="b-link">View Portfolio <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d2">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+      <h3>Toolbox</h3>
+      <p>All the tools and brokers I actually use in my daily workflow.</p>
+      <a href="pages/toolbox.html" class="b-link">View Toolbox <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d3">
+      <div class="b-icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
+      <h3>Blog &amp; Analyses</h3>
+      <p>75+ in-depth stock analyses — upstream, mining, shipping, pipelines &amp; BDCs.</p>
+      <a href="pages/blog.html" class="b-link">Read Blog <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</section>
 
-    <!-- ============================================
-         LATEST BLOG POSTS
-         ============================================ -->
-    <section class="section blog-preview-section" id="blog-preview">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Latest Research</span>
-                <h2 class="section-title">Blog &amp; <span class="gold-text">Analyses</span></h2>
-                <p class="section-desc">75+ in-depth stock analyses across upstream, mining, shipping, pipelines, and high-yield sectors.</p>
-            </div>
-            <div class="blog-preview-grid">
-                <a href="blog/bhp-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Mining</span>
-                    <h4>BHP Group Analysis 2026</h4>
-                    <p>The most stable diversified mining giant globally — copper, iron ore, and potash. AISC, margins, and dividend sustainability assessed.</p>
-                </a>
-                <a href="blog/frontline-vs-scorpio-tankers-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Shipping</span>
-                    <h4>Frontline vs Scorpio Tankers 2026</h4>
-                    <p>VLCC vs MR product tankers — which business model delivers better risk-adjusted dividends for income investors?</p>
-                </a>
-                <a href="blog/pembina-pipeline-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Pipelines</span>
-                    <h4>Pembina Pipeline Analysis 2026</h4>
-                    <p>Canadian midstream anchor — take-or-pay contracts, 5%+ yield, and long-term distribution growth track record.</p>
-                </a>
-                <a href="blog/bdc-crescent-vs-blue-owl-2025.html" class="blog-card glass-card">
-                    <span class="blog-category">BDC &amp; High-Yield</span>
-                    <h4>Crescent Capital vs Blue Owl BDC Comparison</h4>
-                    <p>Two top-tier BDCs compared — NAV stability, NII coverage, portfolio quality, and 9%+ dividend sustainability.</p>
-                </a>
-                <a href="blog/kazatomprom-uranium-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Mining / Uranium</span>
-                    <h4>Kazatomprom Analysis 2026</h4>
-                    <p>World's largest uranium producer with 40% market share — supply constraints, nuclear renaissance, and dividend potential.</p>
-                </a>
-                <a href="blog/devon-energy-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Upstream</span>
-                    <h4>Devon Energy Analysis 2026</h4>
-                    <p>Fixed-plus-variable dividend model with Permian Basin focus — break-even analysis and FCF yield assessment.</p>
-                </a>
-                <a href="blog/enbridge-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Pipelines</span>
-                    <h4>Enbridge Analysis 2026</h4>
-                    <p>North America's largest pipeline operator — 28 consecutive years of dividend increases, toll-road business model, and 7%+ yield.</p>
-                </a>
-                <a href="blog/equinor-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Upstream</span>
-                    <h4>Equinor Analysis 2026</h4>
-                    <p>Norway's energy giant — low break-even costs, offshore expertise, and a fixed-plus-variable dividend policy paying 10%+ yields.</p>
-                </a>
-                <a href="blog/barrick-gold-analysis-2026.html" class="blog-card glass-card">
-                    <span class="blog-category">Mining</span>
-                    <h4>Barrick Gold Analysis 2026</h4>
-                    <p>World's second-largest gold miner — AISC discipline, copper optionality, and a performance-linked dividend framework.</p>
-                </a>
-                <a href="blog/ten-high-yield-dividend-stocks-2025.html" class="blog-card glass-card">
-                    <span class="blog-category">High-Yield</span>
-                    <h4>10 Dividend Stocks with 10%+ Yield</h4>
-                    <p>Curated list of high-yield picks across BDCs, tankers, MLPs, and mining — each vetted for cashflow sustainability.</p>
-                </a>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="pages/blog.html" class="btn btn-primary">View All 75+ Analyses &rarr;</a>
-            </div>
-        </div>
-    </section>
+<div class="sec-line"></div>
 
-    <!-- ============================================
-         FOOTER
-         ============================================ -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="footer-logo">
-                        <picture>
-                            <source srcset="Logo.webp" type="image/webp">
-                            <img loading="lazy" src="Logo.png" alt="MB Capital Strategies" style="height:36px;margin-right:8px;">
-                        </picture>
-                        <span class="logo-mb">MB</span>
-                        <span class="logo-text">Capital Strategies<span class="logo-global">Global</span></span>
-                    </div>
-                    <p class="footer-desc">Independent research platform for dividend investors focusing on hard assets: energy, shipping, mining &amp; pipelines. Real capital, real analysis, no hype.</p>
-                    <div class="footer-social">
-                        <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/mb-capital-strategies/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                        </a>
-                        <a href="https://www.xing.com/profile/Marco_Bozem" target="_blank" rel="noopener" class="social-link" aria-label="XING">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.188 0c-.517 0-.741.325-.927.66 0 0-7.455 13.224-7.702 13.657.015.024 4.919 9.023 4.919 9.023.17.308.436.66.967.66h3.454c.211 0 .375-.078.463-.22.089-.151.089-.346-.009-.536l-4.879-8.916c-.004-.006-.004-.016 0-.022L22.139.756c.095-.191.097-.387.006-.535C22.056.078 21.894 0 21.686 0h-3.498zM3.648 4.74c-.211 0-.385.074-.473.216-.09.149-.078.339.02.531l2.34 4.05c.004.01.004.016 0 .021L3.169 13.88c-.09.185-.089.381 0 .529.085.142.239.234.45.234h3.461c.518 0 .766-.348.945-.667l2.435-4.38-2.386-4.22c-.163-.305-.455-.637-.96-.637H3.648z"/></svg>
-                        </a>
-                        <a href="https://odysee.com/@mbcapitalstrategies:5" target="_blank" rel="noopener" class="social-link" aria-label="Odysee">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 17.08c-.572.846-1.782.846-2.354 0l-3.54-5.243-3.54 5.243c-.572.846-1.782.846-2.354 0-.572-.846-.572-2.217 0-3.063L9.646 9.08 6.106 4.017c-.572-.846-.572-2.217 0-3.063.572-.846 1.782-.846 2.354 0L12 6.197l3.54-5.243c.572-.846 1.782-.846 2.354 0 .572.846.572 2.217 0 3.063L14.354 9.08l3.54 4.937c.572.846.572 2.217 0 3.063z"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Platform</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="pages/about.html">About Marco Bozem</a></li>
-                        <li><a href="pages/portfolio.html">Portfolio Strategy</a></li>
-                        <li><a href="pages/hard-asset-guide.html">Hard Asset Guide</a></li>
-                        <li><a href="pages/blog.html">Blog &amp; Analyses</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Sectors</h4>
-                    <ul>
-                        <li><a href="pages/shipping.html">Shipping Stocks</a></li>
-                        <li><a href="pages/pipelines.html">Midstream / Pipelines</a></li>
-                        <li><a href="pages/mining.html">Mining Stocks</a></li>
-                        <li><a href="pages/energy.html">Energy &amp; Upstream</a></li>
-                        <li><a href="pages/high-yield.html">High-Yield &amp; BDCs</a></li>
-                        <li><a href="pages/supercycles.html">Commodity Supercycles</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Tools</h4>
-                    <ul>
-                        <li><a href="pages/calculators.html">All Calculators</a></li>
-                        <li><a href="tools/dividend-calculator.html">Dividend Calculator</a></li>
-                        <li><a href="tools/yield-on-cost.html">YOC Calculator</a></li>
-                        <li><a href="tools/financial-freedom.html">Financial Freedom</a></li>
-                        <li><a href="pages/toolbox.html">Toolbox</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>More</h4>
-                    <ul>
-                        <li><a href="pages/about.html">About Marco Bozem</a></li>
-                        <li><a href="pages/podcast.html">Podcast</a></li>
-                        <li><a href="pages/glossary.html">Glossary</a></li>
-                        <li><a href="https://de.investing.com/members/contributors/268748043/opinion" target="_blank" rel="noopener">Investing.com Analyses</a></li>
-                        <li><a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener">YouTube</a></li>
-                        <li><a href="https://www.linkedin.com/company/mb-capital-strategies/" target="_blank" rel="noopener">LinkedIn</a></li>
-                        <li><a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 MB Capital Strategies Global. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="pages/contact.html">Contact</a>
-                    <a href="pages/imprint.html">Imprint</a>
-                    <a href="pages/privacy.html">Privacy Policy</a>
-                    <a href="pages/glossary.html">Glossary</a>
-                    <a href="pages/disclaimer.html">Disclaimer</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<!-- ═══ PARTNER & TOOLS ═══ -->
+<section class="sec sr">
+  <div class="sec-tag">Recommended Tools</div>
 
-    <script src="js/main.min.js"></script>
+  <ins class="adsbygoogle" style="display:block;text-align:center;margin:0 auto 32px" data-ad-client="ca-pub-7097302643579933" data-ad-slot="1212067635" data-ad-format="in-article" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+
+  <h2 class="sec-h">Tools I <em>Actually</em> Use</h2>
+  <p class="sec-sub">Brokers, tools &amp; platforms from my daily investing workflow.</p>
+
+  <div class="partner-grid">
+    <div class="p-card sr sr-d1"><h3>Scalable Capital</h3><p>Primary broker for dividend investing — flat-rate fees and automated savings plans.</p><a class="btn-sm" href="https://de.scalable.capital/trading-aff?utm_medium=affiliate&utm_source=qualityclick&utm_campaign=broker&utm_term=921&c_id=QC5f486e726d74q6a7X47c52744b5f4c6a76647f63757e5a7f43" target="_blank" rel="sponsored noopener">Scalable Capital &rarr;</a></div>
+    <div class="p-card sr sr-d2"><h3>Trade Republic</h3><p>Second broker — commission-free trading and 4% interest on cash.</p><a class="btn-sm" href="https://refnocode.trade.re/79z763g7" target="_blank" rel="sponsored noopener">Trade Republic &rarr;</a></div>
+    <div class="p-card sr sr-d3"><h3>Parqet</h3><p>Portfolio &amp; dividend tracking with cashflow visualization.</p><a class="btn-sm" href="https://parqet.com/?ref=a99fc877f10014bd0f127146a803dac354f018d8" target="_blank" rel="sponsored noopener">15% Discount &rarr;</a></div>
+    <div class="p-card sr sr-d4"><h3>InvestingPro</h3><p>Fundamental data, fair-value models &amp; screening tools.</p><a class="btn-sm" href="https://www.investing-referral.com/mbcapital3/" target="_blank" rel="sponsored noopener">15% Discount &rarr;</a></div>
+    <div class="p-card sr sr-d5"><h3>Debitum Investments</h3><p>P2P — secured business loans yielding 10–12% returns.</p><a class="btn-sm" href="https://debituminvestments.pxf.io/vDzqgy" target="_blank" rel="sponsored noopener">Learn More &rarr;</a></div>
+    <div class="p-card sr sr-d6"><h3>YouTube</h3><p>Analyses, portfolio updates &amp; hard asset strategies.</p><a class="btn-sm" href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener">Visit Channel &rarr;</a></div>
+  </div>
+  <p style="text-align:center;color:var(--text-muted);font-size:.8rem;margin-top:20px;">Transparency: Some links are affiliate links. No additional costs for you.</p>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══ CALCULATORS ═══ -->
+<section class="sec sr">
+  <div class="sec-tag">Free Tools</div>
+  <h2 class="sec-h">Investor Calculators &amp; <em>Simulations</em></h2>
+  <p class="sec-sub">Calculate your cashflow, YOC, snowball effect &amp; more — completely free.</p>
+
+  <div class="tools-grid">
+    <div class="t-card sr sr-d1"><h3>Shipping Cashflow</h3><p>TCE, OPEX, FCF &amp; dividend potential.</p><a href="tools/shipping-cashflow.html" class="btn-sm">Open &rarr;</a></div>
+    <div class="t-card sr sr-d2"><h3>Dividend Calculator</h3><p>Annual, monthly or quarterly dividends.</p><a href="tools/dividend-calculator.html" class="btn-sm">Calculate &rarr;</a></div>
+    <div class="t-card sr sr-d3"><h3>Yield-on-Cost</h3><p>Your effective yield on original cost basis.</p><a href="tools/yield-on-cost.html" class="btn-sm">YOC &rarr;</a></div>
+    <div class="t-card sr sr-d4"><h3>Dividend Growth</h3><p>Simulate annual dividend growth rate compounding.</p><a href="tools/dividend-growth.html" class="btn-sm">Simulate &rarr;</a></div>
+    <div class="t-card sr sr-d5"><h3>DRIP Reinvestment</h3><p>Compound interest through dividend reinvestment.</p><a href="tools/drip-calculator.html" class="btn-sm">Calculator &rarr;</a></div>
+    <div class="t-card sr sr-d6"><h3>Financial Freedom</h3><p>When do dividends cover your monthly expenses?</p><a href="tools/financial-freedom.html" class="btn-sm">Calculate &rarr;</a></div>
+    <div class="t-card sr sr-d7"><h3>Dividend Snowball PRO</h3><p>Long-term growth &amp; reinvestment effects.</p><a href="tools/dividend-snowball.html" class="btn-sm">Snowball &rarr;</a></div>
+    <div class="t-card sr sr-d8"><h3>Snowball YOC PRO</h3><p>YOC + growth + reinvestment — the full snowball.</p><a href="tools/snowball-yoc-pro.html" class="btn-sm">YOC Pro &rarr;</a></div>
+  </div>
+
+  <div class="cta-b">
+    <h3>All Investor Calculators at a Glance</h3>
+    <p>Dividend, YOC, growth, reinvestment, freedom &amp; shipping cashflow calculators</p>
+    <a href="pages/calculators.html">View All Calculators &rarr;</a>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══ PODCAST & YOUTUBE ═══ -->
+<section class="sec sr" style="text-align:center">
+  <div class="sec-tag">Listen &amp; Watch</div>
+  <h2 class="sec-h">Podcast &amp; <em>YouTube</em></h2>
+  <p class="sec-sub" style="margin:0 auto 32px">Deep-dive episodes on hard asset investing — available on Spotify, Apple Podcasts, and YouTube.</p>
+
+  <div class="bento" style="grid-template-columns:1fr;max-width:700px;margin:0 auto">
+    <div class="b-card featured sr sr-d1" style="text-align:center">
+      <div class="sec-tag" style="margin-bottom:10px">Hard Asset Income Podcast</div>
+      <h3>Weekly Dividend Investing Insights</h3>
+      <p>Each episode covers a specific sector or strategy in depth — from <a href="pages/shipping.html" style="color:var(--gold-primary)">shipping cashflows</a> and <a href="pages/mining.html" style="color:var(--gold-primary)">mining cycles</a> to <a href="pages/pipelines.html" style="color:var(--gold-primary)">pipeline tariffs</a> and <a href="pages/high-yield.html" style="color:var(--gold-primary)">BDC analysis</a>. Real portfolio insights, no fluff.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px">
+        <a href="pages/podcast.html" class="btn-p">All Episodes</a>
+        <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener" class="btn-s">YouTube Channel</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══ BLOG PREVIEW ═══ -->
+<section class="sec sr">
+  <div class="sec-tag">Latest Research</div>
+  <h2 class="sec-h">Blog &amp; <em>Analyses</em></h2>
+  <p class="sec-sub">75+ in-depth stock analyses across upstream, mining, shipping, pipelines, and high-yield sectors.</p>
+
+  <div class="bento">
+    <div class="b-card sr sr-d1">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">Mining</div>
+      <h3>BHP Group Analysis 2026</h3>
+      <p>The most stable diversified mining giant globally — copper, iron ore, and potash. AISC, margins, and dividend sustainability.</p>
+      <a href="blog/bhp-analysis-2026.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d2">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">Shipping</div>
+      <h3>Frontline vs Scorpio Tankers</h3>
+      <p>VLCC vs MR product tankers — which model delivers better risk-adjusted dividends?</p>
+      <a href="blog/frontline-vs-scorpio-tankers-2026.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d3">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">Pipelines</div>
+      <h3>Pembina Pipeline 2026</h3>
+      <p>Canadian midstream anchor — take-or-pay contracts, 5%+ yield, and distribution growth.</p>
+      <a href="blog/pembina-pipeline-analysis-2026.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d4">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">BDC &amp; High-Yield</div>
+      <h3>Crescent vs Blue Owl BDC</h3>
+      <p>Two top-tier BDCs compared — NAV stability, NII coverage, and 9%+ dividend sustainability.</p>
+      <a href="blog/bdc-crescent-vs-blue-owl-2025.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d5">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">Mining / Uranium</div>
+      <h3>Kazatomprom Analysis 2026</h3>
+      <p>World's largest uranium producer — supply constraints, nuclear renaissance, and dividend potential.</p>
+      <a href="blog/kazatomprom-uranium-analysis-2026.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+    <div class="b-card sr sr-d6">
+      <div class="sec-tag" style="font-size:.65rem;margin-bottom:8px">Upstream</div>
+      <h3>Devon Energy Analysis 2026</h3>
+      <p>Fixed-plus-variable dividend model with Permian Basin focus — break-even analysis and FCF yield.</p>
+      <a href="blog/devon-energy-analysis-2026.html" class="b-link">Read Analysis <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+
+  <div class="cta-b" style="margin-top:40px">
+    <h3>View All 75+ Analyses</h3>
+    <p>Upstream, mining, shipping, pipelines &amp; high-yield stock research</p>
+    <a href="pages/blog.html">Read All Analyses &rarr;</a>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══ FAQ ═══ -->
+<section class="sec sr" style="text-align:center">
+  <div class="sec-tag">FAQ</div>
+  <h2 class="sec-h">Frequently Asked <em>Questions</em></h2>
+  <div style="height:24px"></div>
+  <div class="faq-wrap" style="text-align:left">
+    <details class="faq-item"><summary>What are hard assets and why do they pay high dividends?</summary><div class="faq-a">Hard assets are physical, tangible assets — ships, pipelines, mines, oil wells, infrastructure. They generate cashflow from real economic activity and distribute it as dividends. Yields of 6–15% are typical during high-cycle phases. Unlike tech stocks valued on future potential, hard asset companies are valued on what they produce today.</div></details>
+    <details class="faq-item"><summary>What is your investment philosophy?</summary><div class="faq-a">Focus on hard assets, high yield, cashflow &amp; counter-cyclical opportunities. 80% in stable dividend payers, 20% in tactical liquidity for weak phases. We buy assets that generate income regardless of what the broader market does.</div></details>
+    <details class="faq-item"><summary>How can I see your portfolio?</summary><div class="faq-a">On the <a href="pages/portfolio.html">Portfolio Strategy page</a> with embedded Parqet portfolios (Scalable Capital + Trade Republic) and monthly YouTube portfolio updates on <a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener">@mbcapitalstrategies</a>.</div></details>
+    <details class="faq-item"><summary>Which free tools are available?</summary><div class="faq-a">All <a href="pages/calculators.html">investor calculators</a> are free: Shipping Cashflow, Dividend Calculator, YOC, Snowball, DRIP Reinvestment, Dividend Growth &amp; Financial Freedom.</div></details>
+  </div>
+</section>
+
+<div class="sec-line"></div>
+
+<!-- ═══ BEST-OF LISTS ═══ -->
+<section class="sec sr">
+  <div class="best">
+    <h3>Popular Rankings 2026</h3>
+    <a href="pages/best-lng.html">Best LNG Stocks 2026</a>
+    <a href="pages/best-tanker.html">Best Tanker Stocks 2026</a>
+    <a href="pages/best-high-yield.html">Top 5 High-Yield 2026</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div style="background:rgba(212,175,55,.05);border-bottom:1px solid rgba(212,175,55,.12);padding:20px 24px;text-align:center;margin:-64px -24px 48px;border-radius:0">
+    <p style="color:var(--text-secondary);font-size:.85rem;margin:0"><strong style="color:var(--gold-primary)">MB Capital Insider</strong> — Every Sunday: Weekly Review &amp; Market Outlook. <a href="#newsletter" style="color:var(--gold-primary);font-weight:700">Subscribe now &rarr;</a></p>
+  </div>
+  <div class="footer-inner">
+    <div class="footer-col"><h4>MB Capital Strategies</h4><a href="index.html">Home</a><a href="pages/about.html">About Marco Bozem</a><a href="pages/portfolio.html">Portfolio Strategy</a><a href="pages/hard-asset-guide.html">Hard Asset Guide</a><a href="pages/blog.html">Blog &amp; Analyses</a></div>
+    <div class="footer-col"><h4>Sectors</h4><a href="pages/shipping.html">Shipping Stocks</a><a href="pages/pipelines.html">Midstream / Pipelines</a><a href="pages/mining.html">Mining Stocks</a><a href="pages/energy.html">Energy &amp; Upstream</a><a href="pages/high-yield.html">High-Yield &amp; BDCs</a><a href="pages/supercycles.html">Commodity Supercycles</a></div>
+    <div class="footer-col"><h4>Tools</h4><a href="pages/calculators.html">All Calculators</a><a href="tools/dividend-calculator.html">Dividend Calculator</a><a href="tools/yield-on-cost.html">YOC Calculator</a><a href="tools/financial-freedom.html">Financial Freedom</a><a href="pages/toolbox.html">Toolbox</a></div>
+    <div class="footer-col"><h4>More</h4><a href="pages/podcast.html">Podcast</a><a href="pages/glossary.html">Glossary</a><a href="https://de.investing.com/members/contributors/268748043/opinion" target="_blank" rel="noopener">Investing.com</a><a href="https://www.youtube.com/@mbcapitalstrategies" target="_blank" rel="noopener">YouTube</a><a href="https://www.linkedin.com/company/mb-capital-strategies/" target="_blank" rel="noopener">LinkedIn</a><a href="https://mbcapitalstrategies.com" target="_blank" rel="noopener">Deutsche Version</a></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 MB Capital Strategies Global</span>
+    <div style="display:flex;gap:20px;flex-wrap:wrap"><a href="pages/contact.html">Contact</a><a href="pages/imprint.html">Imprint</a><a href="pages/privacy.html">Privacy</a><a href="pages/glossary.html">Glossary</a><a href="pages/disclaimer.html">Disclaimer</a></div>
+  </div>
+  <div class="footer-aff">Some links are affiliate links. No additional costs for you. Not investment advice.</div>
+</footer>
+
+<script src="js/main.min.js"></script>
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <div class="cookie-banner" id="cookieBanner"><div class="cookie-inner"><p class="cookie-text">We use cookies and Google Analytics to improve your experience. By clicking "Accept", you consent to the use of cookies for analytics and ads. <a href="pages/privacy.html">Privacy Policy</a></p><div class="cookie-buttons"><button class="cookie-btn cookie-btn-reject" id="cookieReject">Reject</button><button class="cookie-btn cookie-btn-accept" id="cookieAccept">Accept</button></div></div></div>
 </body>
 </html>
