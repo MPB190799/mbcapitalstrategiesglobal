@@ -16,14 +16,14 @@
     --gold-text-gradient: linear-gradient(135deg, #e8c95a, #d4af37, #f2d675);
 
     /* Black Palette */
-    --black-deepest: #000000;
-    --black-deep: #050507;
-    --black-primary: #0a0a0f;
-    --black-card: #0e0e15;
-    --black-elevated: #13131c;
-    --black-surface: #181823;
-    --black-border: #1e1e2e;
-    --black-hover: #252535;
+    --black-deepest: #030305;
+    --black-deep: #050508;
+    --black-primary: #080a12;
+    --black-card: #0c0e18;
+    --black-elevated: #111420;
+    --black-surface: #161a28;
+    --black-border: #1c1e30;
+    --black-hover: #222438;
 
     /* Text Colors */
     --text-primary: #f0f0f5;
@@ -74,6 +74,35 @@ body {
     overflow-x: hidden;
 }
 
+/* ── Gold Aurora Orbs ── */
+.bg-lines{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden}
+.bg-lines span{position:absolute;border-radius:50%}
+.bg-lines span:nth-child(1){top:-10%;left:-5%;width:50vw;height:50vw;background:radial-gradient(circle,rgba(212,175,55,.1) 0%,transparent 70%);animation:_bf1 20s ease-in-out infinite}
+.bg-lines span:nth-child(2){top:30%;right:-10%;width:40vw;height:40vw;background:radial-gradient(circle,rgba(212,175,55,.08) 0%,transparent 70%);animation:_bf2 25s ease-in-out infinite}
+.bg-lines span:nth-child(3){bottom:-5%;left:20%;width:45vw;height:45vw;background:radial-gradient(circle,rgba(212,175,55,.06) 0%,transparent 70%);animation:_bf3 22s ease-in-out infinite}
+.bg-lines span:nth-child(4){top:50%;left:50%;width:30vw;height:30vw;background:radial-gradient(circle,rgba(212,175,55,.09) 0%,transparent 60%);animation:_bf4 18s ease-in-out infinite}
+.bg-lines span:nth-child(5){top:10%;left:60%;width:25vw;height:25vw;background:radial-gradient(circle,rgba(212,175,55,.07) 0%,transparent 70%);animation:_bf5 28s ease-in-out infinite}
+.bg-lines span:nth-child(6){bottom:20%;right:30%;width:20vw;height:20vw;background:radial-gradient(circle,rgba(212,175,55,.08) 0%,transparent 65%);animation:_bf6 24s ease-in-out infinite}
+@keyframes _bf1{0%,100%{transform:translate(0,0) scale(1)}25%{transform:translate(8vw,5vh) scale(1.1)}50%{transform:translate(3vw,12vh) scale(.95)}75%{transform:translate(-5vw,6vh) scale(1.05)}}
+@keyframes _bf2{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(-10vw,8vh) scale(1.15)}66%{transform:translate(-5vw,-5vh) scale(.9)}}
+@keyframes _bf3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,-8vh) scale(1.1)}}
+@keyframes _bf4{0%,100%{transform:translate(-50%,-50%) scale(1)}50%{transform:translate(calc(-50% + 10vw),calc(-50% - 10vh)) scale(1.2)}}
+@keyframes _bf5{0%,100%{transform:translate(0,0)}50%{transform:translate(-8vw,12vh)}}
+@keyframes _bf6{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,-8vh) scale(1.15)}}
+
+/* ── Gold Wave Lines ── */
+.bg-wave{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.bg-wave svg{position:absolute;width:200%;height:100%;top:0;left:-50%}
+.bg-wave svg:first-child{animation:_bwf 14s linear infinite}
+.bg-wave svg:last-child{animation:_bwf2 18s linear infinite;opacity:.5}
+@keyframes _bwf{0%{transform:translateX(-25%)}100%{transform:translateX(0)}}
+@keyframes _bwf2{0%{transform:translateX(0)}100%{transform:translateX(-25%)}}
+
+/* ── Rotating Gold Border on Cards ── */
+@property --angle{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes rotateBorder{to{--angle:360deg}}
+@keyframes shimmer{to{background-position:200% center}}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -105,18 +134,32 @@ button {
 
 /* === Glass Card === */
 .glass-card {
-    background: var(--glass-bg);
-    backdrop-filter: blur(var(--glass-blur));
-    -webkit-backdrop-filter: blur(var(--glass-blur));
-    border: 1px solid var(--glass-border);
+    background: var(--black-card);
+    border: 1px solid rgba(255,255,255,0.04);
     border-radius: var(--border-radius);
-    transition: all var(--transition-base);
+    transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+    position: relative;
+    overflow: hidden;
 }
-
+.glass-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: var(--border-radius);
+    background: conic-gradient(from var(--angle,0deg), transparent 30%, rgba(212,175,55,0.3) 50%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: -1;
+    pointer-events: none;
+}
 .glass-card:hover {
-    border-color: rgba(212, 175, 55, 0.35);
-    box-shadow: 0 8px 32px rgba(212, 175, 55, 0.12), 0 0 0 1px rgba(212, 175, 55, 0.15);
-    transform: translateY(-4px);
+    border-color: transparent;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 20px rgba(212,175,55,0.06);
+    transform: translateY(-6px);
+}
+.glass-card:hover::before {
+    opacity: 1;
+    animation: rotateBorder 3s linear infinite;
 }
 
 /* === Typography === */
@@ -137,7 +180,7 @@ button {
     margin-bottom: 12px;
 }
 
-.section-title {
+.section-title, .sec-h {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     font-weight: 800;
     line-height: 1.2;
@@ -503,10 +546,17 @@ button {
 }
 
 .hero-title {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 900;
-    line-height: 1.15;
-    margin-bottom: 16px;
+    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.08;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #f5e07a 0%, #d4af37 35%, #c49b2f 65%, #e8c95a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 6s linear infinite;
 }
 
 .hero-subtitle {
@@ -1268,9 +1318,17 @@ button {
 }
 
 .page-hero h1 {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-size: clamp(2rem, 5vw, 3.2rem);
     font-weight: 800;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    background: linear-gradient(135deg, #f5e07a 0%, #d4af37 40%, #c49b2f 70%, #e8c95a 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 6s linear infinite;
 }
 
 .page-hero p {
