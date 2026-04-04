@@ -96,6 +96,38 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/glossary.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/glossar/index.html"/>
   </url>
+  <!-- Glossary Standalone Pages -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/aisc-mining-costs.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/tce-rate-shipping.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/dividend-coverage-ratio.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/baltic-dry-index.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/free-cash-flow.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/hard-asset-guide.html</loc>
     <lastmod>2026-03-19</lastmod>

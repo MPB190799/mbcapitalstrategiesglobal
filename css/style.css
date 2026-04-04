@@ -27,8 +27,8 @@
 
     /* Text Colors */
     --text-primary: #f0f0f5;
-    --text-secondary: #9a9ab0;
-    --text-muted: #8a8a9f;
+    --text-secondary: #b0b0c8;
+    --text-muted: #9a9ab8;
     --text-gold: #d4af37;
 
     /* Glass Effect */
@@ -433,100 +433,6 @@ button {
     overflow: visible;
 }
 
-.hero-bg-effects {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-}
-
-.hero-glow {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    position: relative;
-    z-index: 1;
-}
-
-.hero-left {
-    flex-shrink: 0;
-}
-
-/* Avatar */
-.avatar-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-
-.avatar-ring {
-    position: absolute;
-    inset: -8px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: var(--gold-primary);
-    border-right-color: var(--gold-light);
-    animation: spin 4s linear infinite;
-}
-
-/* @keyframes spin — moved to Bento section (line ~2815) */
-
-.avatar-placeholder {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: var(--black-elevated);
-    border: 2px solid var(--gold-dark);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.avatar-placeholder span {
-    font-size: 3rem;
-    font-weight: 900;
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.avatar-badge {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    background: #28a745;
-    color: white;
-    font-size: 0.65rem;
-    font-weight: 700;
-    padding: 3px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.avatar-badge.pulse {
-    animation: pulse 2s ease infinite;
-}
-
-/* @keyframes pulse — moved to Bento section (line ~2814) */
-
-/* Hero Text */
-.hero-right {
-    flex: 1;
-}
-
 .hero-tag {
     display: inline-block;
     font-size: 0.7rem;
@@ -541,67 +447,12 @@ button {
     margin-bottom: 20px;
 }
 
-.hero-title {
-    font-size: clamp(2.2rem, 5.5vw, 3.8rem);
-    font-weight: 800;
-    line-height: 1.08;
-    margin-bottom: 20px;
-    letter-spacing: -0.03em;
-    background: linear-gradient(135deg, #f5e07a 0%, #d4af37 35%, #c49b2f 65%, #e8c95a 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: shimmer 6s linear infinite;
-}
-
-.hero-subtitle {
-    font-size: 1.1rem;
-    color: var(--text-secondary);
-    max-width: 520px;
-    margin-bottom: 32px;
-    line-height: 1.8;
-}
-
-/* Stats */
-.hero-stats {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-bottom: 36px;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.stat-number {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--gold-primary);
-}
-
 .stat-label {
     font-size: 0.72rem;
     font-weight: 500;
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-}
-
-.stat-divider {
-    width: 1px;
-    height: 36px;
-    background: var(--black-border);
-}
-
-/* CTA Buttons */
-.hero-cta {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
 }
 
 /* ============================================
@@ -1451,24 +1302,6 @@ button {
         display: block;
     }
 
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-subtitle {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-stats {
-        justify-content: center;
-    }
-
-    .hero-cta {
-        justify-content: center;
-    }
-
     .sectors-grid {
         grid-template-columns: 1fr;
     }
@@ -1506,23 +1339,6 @@ button {
     .philosophy-stats {
         flex-direction: column;
         gap: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-stats {
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
-
-    .stat-divider {
-        width: 40px;
-        height: 1px;
-    }
-
-    .hero-title {
-        font-size: 1.7rem;
     }
 }
 
