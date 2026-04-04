@@ -479,9 +479,7 @@ button {
     animation: spin 4s linear infinite;
 }
 
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
+/* @keyframes spin — moved to Bento section (line ~2815) */
 
 .avatar-placeholder {
     width: 100%;
@@ -522,10 +520,7 @@ button {
     animation: pulse 2s ease infinite;
 }
 
-@keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4); }
-    50% { box-shadow: 0 0 0 8px rgba(40, 167, 69, 0); }
-}
+/* @keyframes pulse — moved to Bento section (line ~2814) */
 
 /* Hero Text */
 .hero-right {
@@ -2428,11 +2423,7 @@ article table {
     opacity: 1;
 }
 
-/* Pulse animation for live badge */
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.5; }
-}
+/* @keyframes pulse for live-badge — moved to Bento section (line ~2809) */
 
 .live-badge {
     animation: pulse 2s infinite;
