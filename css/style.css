@@ -2599,7 +2599,7 @@ button:focus-visible,
 /* Print styles */
 @media print {
     .navbar, .footer, .cookie-banner, .back-to-top,
-    .reading-progress, ins.adsbygoogle { display: none !important; }
+    .reading-progress { display: none !important; }
     body { background: #fff !important; color: #000 !important; }
     h1, h2, h3 { color: #333 !important; }
     .page-content .container { max-width: 100%; }
