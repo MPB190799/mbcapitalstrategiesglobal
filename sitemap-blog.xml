@@ -175,7 +175,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/blog/dno-asa-analysis-2026.html</loc>
-    <lastmod>2026-03-25</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/dno-asa-analysis-2026.html"/>
@@ -615,8 +615,15 @@
   </url>
 
   <!-- NEW: Upstream Analyses -->
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/total-gabon-analysis-2026.html</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/inplay-oil-analyse-2026.html"/>
+  </url>
+  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/total-gabon-analysis-2026.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/south32-analysis-2026.html</loc><lastmod>2025-12-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/newmont-mining-series-12.html</loc><lastmod>2025-11-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/kinder-morgan-analysis-2025.html</loc><lastmod>2025-09-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
