@@ -623,7 +623,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/inplay-oil-analyse-2026.html"/>
   </url>
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/total-gabon-analysis-2026.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/total-gabon-analysis-2026.html</loc>
+    <lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/total-gabon-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/total-gabon-analyse-2026.html"/>
+  </url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/south32-analysis-2026.html</loc><lastmod>2025-12-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/newmont-mining-series-12.html</loc><lastmod>2025-11-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://mbcapitalstrategiesgloabal.com/blog/kinder-morgan-analysis-2025.html</loc><lastmod>2025-09-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -672,8 +677,23 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/riley-exploration-permian-analyse-2026.html"/>
   </url>
 
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw14-2026.html</loc><lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/36-stocks-watchlist-2026.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://mbcapitalstrategiesgloabal.com/blog/hoegh-autoliners-analysis-2026.html</loc><lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw14-2026.html</loc>
+    <lastmod>2026-04-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/weekly-recap-kw14-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/wochenrueckblick-kw14-2026.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/36-stocks-watchlist-2026.html</loc>
+    <lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/36-stocks-watchlist-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/36-aktien-nachkaufen-watchlist-2026.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/hoegh-autoliners-analysis-2026.html</loc>
+    <lastmod>2026-04-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/hoegh-autoliners-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/hoegh-autoliners-analyse-2026.html"/>
+  </url>
 
 </urlset>
