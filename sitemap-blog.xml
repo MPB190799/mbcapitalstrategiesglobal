@@ -696,4 +696,18 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/hoegh-autoliners-analyse-2026.html"/>
   </url>
 
+  <!-- ===== NEW ARTICLES 12.04.2026 ===== -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/riley-exploration-analysis-2026.html</loc>
+    <lastmod>2026-04-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/riley-exploration-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/riley-exploration-analyse-2026.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html</loc>
+    <lastmod>2026-04-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/blog/inplay-oil-analysis-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/blog/inplay-oil-analyse-2026.html"/>
+  </url>
+
 </urlset>
