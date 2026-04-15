@@ -181,9 +181,10 @@ button {
 }
 
 .section-title, .sec-h {
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 800;
-    line-height: 1.2;
+    font-family: 'DM Serif Display', 'Outfit', serif;
+    font-size: clamp(1.9rem, 4.2vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
     margin-bottom: 16px;
 }
 
@@ -2620,21 +2621,23 @@ button:focus-visible,
 @keyframes heroPulse{0%,100%{opacity:.6;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.12)}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
 @keyframes spin{to{transform:rotate(360deg)}}
+@keyframes heroFadeUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
 
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.18);border-radius:999px;padding:6px 18px;font-size:.72rem;font-weight:600;color:var(--gold-primary);letter-spacing:.12em;text-transform:uppercase;margin-bottom:40px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,.06);border:1px solid rgba(212,175,55,.18);border-radius:999px;padding:6px 18px;font-size:.72rem;font-weight:600;color:var(--gold-primary);letter-spacing:.12em;text-transform:uppercase;margin-bottom:40px;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .1s forwards}
 .hero-badge::before{content:'';width:6px;height:6px;background:var(--gold-primary);border-radius:50%;animation:pulse 2s infinite;box-shadow:0 0 8px rgba(212,175,55,.6)}
 
-.hero-avatar-wrap{position:relative;width:180px;height:180px;margin:0 auto 32px}
+.hero-avatar-wrap{position:relative;width:180px;height:180px;margin:0 auto 32px;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .25s forwards,heroFloat 5s ease-in-out 1.2s infinite}
 .hero-avatar-wrap::before,.hero-avatar-wrap::after{content:'';position:absolute;inset:-6px;border-radius:50%}
 .hero-avatar-wrap::before{background:conic-gradient(from 0deg,#d4af37,#f0d060,#d4af37,#a07820,#d4af37);animation:spin 8s linear infinite;box-shadow:0 0 40px rgba(212,175,55,.2),0 0 80px rgba(212,175,55,.08)}
 .hero-avatar-wrap::after{inset:-3px;background:var(--black-deepest);border-radius:50%}
 .hero-img{position:relative;z-index:1;width:168px;height:168px;border-radius:50%;object-fit:cover;display:block;margin:6px}
 
-.hero h1{font-size:clamp(2.4rem,5.5vw,4rem);font-weight:800;line-height:1.05;margin:0 0 20px;letter-spacing:-.03em;background:linear-gradient(135deg,#f5e07a 0%,#d4af37 35%,#c49b2f 65%,#e8c95a 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 6s linear infinite}
-.hero-sub{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--text-secondary);max-width:560px;margin:0 auto 24px;line-height:1.7;font-weight:400}
+.hero h1{font-family:'DM Serif Display','Outfit',serif;font-size:clamp(2.6rem,6vw,4.4rem);font-weight:400;line-height:1.08;margin:0 0 20px;letter-spacing:-.01em;background:linear-gradient(135deg,#f5e07a 0%,#d4af37 35%,#c49b2f 65%,#e8c95a 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .4s forwards,shimmer 6s linear 1.2s infinite}
+.hero-sub{font-size:clamp(1rem,1.8vw,1.2rem);color:var(--text-secondary);max-width:560px;margin:0 auto 24px;line-height:1.7;font-weight:400;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .55s forwards}
 .hero-sub strong{color:var(--gold-primary);font-weight:600}
 
-.hero .hero-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:48px}
+.hero .hero-cta{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-bottom:48px;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .7s forwards}
 
 /* ── BUTTONS (Bento) ── */
 .btn-p{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:14px;background:linear-gradient(135deg,#e8c95a,#d4af37,#b8941f);color:var(--black-deepest);font-weight:700;font-size:.92rem;border:none;cursor:pointer;transition:all .3s cubic-bezier(0.4,0,0.2,1);box-shadow:0 4px 24px rgba(212,175,55,.3)}
@@ -2645,7 +2648,7 @@ button:focus-visible,
 .btn-sm:hover{background:var(--gold-primary);color:var(--black-deepest);border-color:var(--gold-primary)}
 
 /* ── STATS STRIP ── */
-.stats{display:grid;grid-template-columns:repeat(5,1fr);max-width:800px;margin:0 auto 20px;background:var(--black-card);border:1px solid rgba(212,175,55,.12);border-radius:24px;overflow:hidden}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);max-width:800px;margin:0 auto 20px;background:var(--black-card);border:1px solid rgba(212,175,55,.12);border-radius:24px;overflow:hidden;opacity:0;animation:heroFadeUp .8s cubic-bezier(0.16,1,0.3,1) .85s forwards}
 .stat{padding:28px 12px;text-align:center;position:relative}
 .stat:not(:last-child)::after{content:'';position:absolute;right:0;top:20%;height:60%;width:1px;background:rgba(212,175,55,.12)}
 .stat-v{display:block;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:var(--gold-primary);line-height:1;margin-bottom:6px;font-family:'IBM Plex Mono','Outfit',sans-serif}
@@ -2660,7 +2663,7 @@ button:focus-visible,
 .sec{padding:clamp(60px,8vw,120px) 24px;max-width:1200px;margin:0 auto}
 .sec-line{height:1px;max-width:200px;margin:0 auto;background:linear-gradient(90deg,transparent,var(--gold-primary),transparent);opacity:.25}
 .sec-tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-primary);margin-bottom:14px}
-.sec-h{font-size:clamp(1.8rem,4vw,2.8rem);font-weight:800;color:var(--text-primary);margin:0 0 14px;letter-spacing:-.02em;line-height:1.1}
+.sec-h{font-family:'DM Serif Display','Outfit',serif;font-size:clamp(1.9rem,4.2vw,3rem);font-weight:400;color:var(--text-primary);margin:0 0 14px;letter-spacing:-.01em;line-height:1.12}
 .sec-h em{font-style:normal;background:linear-gradient(135deg,#f5e07a,#d4af37);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .sec-sub{color:var(--text-secondary);font-size:.95rem;max-width:520px;line-height:1.7;margin-bottom:40px}
 
@@ -2668,7 +2671,7 @@ button:focus-visible,
 .bento{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .bento .b-card{background:var(--black-card);border:1px solid rgba(255,255,255,.04);border-radius:24px;padding:32px 28px;transition:all .45s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden;display:flex;flex-direction:column}
 .bento .b-card::before{content:'';position:absolute;inset:-1px;border-radius:24px;background:conic-gradient(from var(--angle,0deg),transparent 30%,rgba(212,175,55,.3) 50%,transparent 70%);opacity:0;transition:opacity .5s;z-index:0}
-.bento .b-card:hover{transform:translateY(-6px);border-color:transparent;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.bento .b-card:hover{transform:translateY(-8px) scale(1.01);border-color:transparent;box-shadow:0 24px 64px rgba(0,0,0,.5),0 0 40px rgba(212,175,55,.08)}
 .bento .b-card:hover::before{opacity:1;animation:rotateBorder 3s linear infinite}
 .bento .b-card>*{position:relative;z-index:1}
 .bento .b-card.span-2{grid-column:span 2}
@@ -2686,7 +2689,7 @@ button:focus-visible,
 .tools-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
 .t-card{background:var(--black-card);border:1px solid rgba(255,255,255,.03);border-radius:var(--border-radius);padding:24px;transition:all .4s cubic-bezier(0.4,0,0.2,1);position:relative;overflow:hidden}
 .t-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold-primary),transparent);transform:scaleX(0);transition:transform .4s cubic-bezier(0.4,0,0.2,1)}
-.t-card:hover{border-color:rgba(212,175,55,.35);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.t-card:hover{border-color:rgba(212,175,55,.35);transform:translateY(-6px) scale(1.01);box-shadow:0 16px 48px rgba(0,0,0,.35),0 0 30px rgba(212,175,55,.06)}
 .t-card:hover::after{transform:scaleX(1)}
 .t-card h3{font-size:.9rem;font-weight:700;color:var(--text-primary);margin-bottom:6px}
 .t-card p{font-size:.8rem;color:var(--text-secondary);line-height:1.6;margin-bottom:16px}
