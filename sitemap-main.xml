@@ -34,7 +34,7 @@
   <!-- Main Pages -->
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/about.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/about.html"/>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/disclaimer.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/disclaimer.html"/>
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/energy.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/energy.html"/>
@@ -138,7 +138,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/high-yield.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/high-yield.html"/>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/imprint.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/imprint.html"/>
@@ -154,7 +154,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/mining.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/mining.html"/>
@@ -162,7 +162,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/pipelines.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/pipelines.html"/>
@@ -186,7 +186,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/privacy.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/privacy.html"/>
@@ -194,7 +194,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/shipping.html</loc>
-    <lastmod>2026-03-19</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/shipping.html"/>
@@ -226,7 +226,7 @@
   </url>
   <url>
     <loc>https://mbcapitalstrategiesgloabal.com/pages/upstream.html</loc>
-    <lastmod>2026-03-22</lastmod>
+    <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/upstream.html"/>
@@ -255,6 +255,14 @@
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/zinc-supercycle.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/rohstoffe/zink-superzyklus.html"/>
+  </url>
+
+  <!-- Affiliate Disclosure (NEW) -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/affiliate-disclosure.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Contact & Legal -->
