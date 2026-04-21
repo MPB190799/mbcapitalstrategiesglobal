@@ -275,4 +275,27 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://mbcapitalstrategies.com/kontakt.html"/>
   </url>
 
+  <!-- Best-of ranking pages (NEW) -->
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/best-high-yield.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/best-high-yield.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/best-lng.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/best-lng.html"/>
+  </url>
+  <url>
+    <loc>https://mbcapitalstrategiesgloabal.com/pages/best-tanker.html</loc>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mbcapitalstrategiesgloabal.com/pages/best-tanker.html"/>
+  </url>
+
 </urlset>
