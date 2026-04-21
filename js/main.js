@@ -221,4 +221,33 @@ document.addEventListener('DOMContentLoaded', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    // === GA4 Affiliate Click Tracking ===
+    if (typeof gtag === 'function') {
+        document.querySelectorAll('a[href*="everflow"], a[href*="impact.com"], a[href*="investingpro"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                gtag('event', 'affiliate_click', {
+                    event_category: 'monetization',
+                    event_label: link.href
+                });
+            });
+        });
+
+        // === GA4 Scroll Depth Tracking (25%, 50%, 75%, 90%) ===
+        var scrollMarkers = {25: false, 50: false, 75: false, 90: false};
+        window.addEventListener('scroll', function() {
+            var scrollHeight = document.body.scrollHeight - window.innerHeight;
+            if (scrollHeight <= 0) return;
+            var pct = Math.round((window.scrollY / scrollHeight) * 100);
+            [25, 50, 75, 90].forEach(function(m) {
+                if (pct >= m && !scrollMarkers[m]) {
+                    scrollMarkers[m] = true;
+                    gtag('event', 'scroll_depth', {
+                        event_category: 'engagement',
+                        event_label: m + '%'
+                    });
+                }
+            });
+        }, { passive: true });
+    }
+
 });
