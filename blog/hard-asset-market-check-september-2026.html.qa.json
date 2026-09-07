@@ -5,8 +5,8 @@
   "lang": "en",
   "platform": "blog-en",
   "checker": "distribution-agent-selfcheck",
-  "checked_at": "2026-09-07T07:56:55.491Z",
-  "content_sha": "6bf21da95549037b",
+  "checked_at": "2026-09-07T08:00:28.738Z",
+  "content_sha": "2d36afd40a3f2d7f",
   "hard_scan": "PASS",
-  "note": "Standalone market update — FRED Tier-1 data (SP500, DCOILWTICO, DGS10, DTWEXBGS), disclosure present, no CapTrader mention, R23 not applicable (no earnings detail)"
+  "note": "Standalone market update — FRED Tier-1 data (SP500, DCOILWTICO, DGS10, DTWEXBGS), disclosure in text, no CapTrader, R23 not applicable, GA4+hreflang+x-default+twitter-card+FAQ Schema included"
 }
